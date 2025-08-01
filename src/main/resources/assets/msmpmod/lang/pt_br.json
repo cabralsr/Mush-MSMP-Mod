@@ -1,0 +1,51 @@
+{
+  "block.msmpmod.mush_mushroom": "Mush",
+
+  "block.msmpmod.mush_grass_block": "Grama Infectada",
+
+  "block.msmpmod.mush_muss_block": "Musgo Infectada",
+
+  "block.msmpmod.mush_sleeping_block": "Infecção Adormecida Musgo",
+
+  "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
+
+  "item.msmpmod.necklace_heart_frizt": "§cColar de Coração",
+
+  "item.msmpmod.necklace_heart_frizt.tooltip": "§7§oby Frizt",
+
+  "item.msmpmod.hair_bow_minayas": "§cLaço de Cabelo",
+
+  "item.msmpmod.hair_bow_minayas.tooltip": "§7§oby Minayas",
+
+  "item.msmpmod.necklace_moon_ross": "§cColar de Lua",
+
+  "item.msmpmod.necklace_moon_ross.tooltip": "§7§oby Ross",
+
+  "item.msmpmod.r_l_polaroid": "§cPolaroid Irmãos",
+
+  "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
+
+  "block.msmpmod.mush_sign_mnpc01": "§bPlaca MNPC01",
+
+  "block.msmpmod.mush_sign_mnpc02": "§5Placa MNPC02",
+
+  "block.msmpmod.mush_sign_mnpc03": "§ePlaca MNPC03",
+
+  "block.msmpmod.mush_sign_mnpc04": "Placa MNPC04",
+
+  "block.msmpmod.mush_sign_mnpc05": "§3Placa MNPC05",
+
+  "block.msmpmod.mush_sign_mnpc06": "Placa MNPC06",
+
+  "block.msmpmod.mush_sign_mnpc07": "Placa MNPC07",
+
+  "block.msmpmod.mush_sign_mnpc08": "Placa MNPC08",
+
+  "block.msmpmod.mush_sign_mnpc09": "§dPlaca MNPC09",
+
+  "block.msmpmod.mush_sign_mnpc10": "§9Placa MNPC10",
+
+  "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "creativetab.msmp_tab": "MSMP"
+}

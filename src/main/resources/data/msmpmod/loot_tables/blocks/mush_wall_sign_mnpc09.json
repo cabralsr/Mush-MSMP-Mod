@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:item",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions":[
+
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:mush_sign_mnpc09"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

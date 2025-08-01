@@ -1,0 +1,51 @@
+{
+  "block.msmpmod.mush.mushroom": "Mush",
+
+  "block.msmpmod.mush_grass_block": "Infect Grass",
+
+  "block.msmpmod.mush_muss_block": "Infect Muss",
+
+  "block.msmpmod.mush_sleeping_block": "Dormant Infection Muss",
+
+  "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
+
+  "item.msmpmod.necklace_heart_frizt": "§cHeart Necklace",
+
+  "item.msmpmod.necklace_heart_frizt.tooltip": "§7§oby Frizt",
+
+  "item.msmpmod.hair_bow_minayas": "§cHair Bow",
+
+  "item.msmpmod.hair_bow_minayas.tooltip": "§7§oby Minayas",
+
+  "item.msmpmod.necklace_moon_ross": "§cMoon Necklace",
+
+  "item.msmpmod.necklace_moon_ross.tooltip": "§7§oby Ross",
+
+  "item.msmpmod.r_l_polaroid": "§cPolaroid Brothers",
+
+  "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
+
+  "block.msmpmod.mush_sign_mnpc01": "Sign MNPC01",
+
+  "block.msmpmod.mush_sign_mnpc02": "Sign MNPC02",
+
+  "block.msmpmod.mush_sign_mnpc03": "Sign MNPC03",
+
+  "block.msmpmod.mush_sign_mnpc04": "Sign MNPC04",
+
+  "block.msmpmod.mush_sign_mnpc05": "Sign MNPC05",
+
+  "block.msmpmod.mush_sign_mnpc06": "Sign MNPC06",
+
+  "block.msmpmod.mush_sign_mnpc07": "Sign MNPC07",
+
+  "block.msmpmod.mush_sign_mnpc08": "Sign MNPC08",
+
+  "block.msmpmod.mush_sign_mnpc09": "Sign MNPC09",
+
+  "block.msmpmod.mush_sign_mnpc10": "Sign MNPC10",
+
+  "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "creativetab.msmp_tab": "MSMP"
+}
