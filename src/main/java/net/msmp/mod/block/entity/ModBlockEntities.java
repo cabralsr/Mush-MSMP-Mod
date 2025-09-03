@@ -1,5 +1,6 @@
 package net.msmp.mod.block.entity;
 
+import io.netty.util.Attribute;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,9 +27,12 @@ public class ModBlockEntities {
                             ModBlocks.MUSH_SIGN_MNPC07.get(), ModBlocks.MUSH_WALL_SIGN_MNPC07.get(),
                             ModBlocks.MUSH_SIGN_MNPC08.get(), ModBlocks.MUSH_WALL_SIGN_MNPC08.get(),
                             ModBlocks.MUSH_SIGN_MNPC09.get(), ModBlocks.MUSH_WALL_SIGN_MNPC09.get(),
-                            ModBlocks.MUSH_SIGN_MNPC10.get(), ModBlocks.MUSH_WALL_SIGN_MNPC10.get()
+                            ModBlocks.MUSH_SIGN_MNPC10.get(), ModBlocks.MUSH_WALL_SIGN_MNPC10.get(),
+                            ModBlocks.MUSH_SIGN_MNPC11.get(), ModBlocks.MUSH_WALL_SIGN_MNPC11.get(),
+                            ModBlocks.MUSH_SIGN_GHOST.get(), ModBlocks.MUSH_WALL_SIGN_GHOST.get()
                     ).build(null)
             );
+
 
     public static void register(IEventBus eventBus) {BLOCK_ENTITIES.register(eventBus);}
 }

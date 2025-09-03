@@ -52,6 +52,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         signBlock(((StandingSignBlock) ModBlocks.MUSH_SIGN_MNPC10.get()), ((WallSignBlock) ModBlocks.MUSH_WALL_SIGN_MNPC10.get()),
                 blockTexture(Blocks.OAK_SIGN));
 
+        signBlock(((StandingSignBlock) ModBlocks.MUSH_SIGN_MNPC11.get()), ((WallSignBlock) ModBlocks.MUSH_WALL_SIGN_MNPC11.get()),
+                blockTexture(Blocks.OAK_SIGN));
+
+        signBlock(((StandingSignBlock) ModBlocks.MUSH_SIGN_GHOST.get()), ((WallSignBlock) ModBlocks.MUSH_WALL_SIGN_GHOST.get()),
+                blockTexture(Blocks.OAK_SIGN));
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation textures) {

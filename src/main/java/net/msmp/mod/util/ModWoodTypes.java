@@ -17,4 +17,6 @@ public class ModWoodTypes {
     public static final  WoodType PLACA_MUSHIN08 = WoodType.register(new WoodType(MsmpMod.MOD_ID + ":placa_mushin08", BlockSetType.OAK));
     public static final  WoodType PLACA_MUSHIN09 = WoodType.register(new WoodType(MsmpMod.MOD_ID + ":placa_mushin09", BlockSetType.OAK));
     public static final  WoodType PLACA_MUSHIN10 = WoodType.register(new WoodType(MsmpMod.MOD_ID + ":placa_mushin10", BlockSetType.OAK));
+    public static final  WoodType PLACA_MUSHIN11 = WoodType.register(new WoodType(MsmpMod.MOD_ID + ":placa_mushin11", BlockSetType.OAK));
+    public static final  WoodType PLACA_GHOST = WoodType.register(new WoodType(MsmpMod.MOD_ID + ":placa_ghost", BlockSetType.OAK));
 }

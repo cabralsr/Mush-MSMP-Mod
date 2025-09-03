@@ -1,13 +1,21 @@
 {
   "block.msmpmod.mush.mushroom": "Mush",
 
-  "block.msmpmod.mush_grass_block": "Infect Grass",
+  "block.msmpmod.mush_grass_block": "Red Mythirose",
+
+  "block.msmpmod.mush_grassblue_block": "Blue Mythirose",
+
+  "block.msmpmod.mush_grasspurple_block": "Purple Mythirose",
 
   "block.msmpmod.mush_muss_block": "Infect Muss",
 
   "block.msmpmod.mush_sleeping_block": "Dormant Infection Muss",
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
+
+  "item.msmpmod.necklace_sherina": "§cNecklace",
+
+  "item.msmpmod.necklace_sherina.tooltip": "§7§oby Sherina",
 
   "item.msmpmod.necklace_heart_frizt": "§cHeart Necklace",
 
@@ -25,27 +33,49 @@
 
   "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
 
-  "block.msmpmod.mush_sign_mnpc01": "Sign MNPC01",
+  "item.msmpmod.camera_raviel": "§cCamera",
 
-  "block.msmpmod.mush_sign_mnpc02": "Sign MNPC02",
+  "item.msmpmod.camera_raviel.tooltip": "§7§oby Raviel",
 
-  "block.msmpmod.mush_sign_mnpc03": "Sign MNPC03",
+  "item.msmpmod.foice_first": "Rusty Scythe",
 
-  "block.msmpmod.mush_sign_mnpc04": "Sign MNPC04",
+  "item.msmpmod.mask_luka": "§cKitsune Mask",
 
-  "block.msmpmod.mush_sign_mnpc05": "Sign MNPC05",
+  "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
 
-  "block.msmpmod.mush_sign_mnpc06": "Sign MNPC06",
+  "item.msmpmod.knife_ghost": "GhostFace Knife",
 
-  "block.msmpmod.mush_sign_mnpc07": "Sign MNPC07",
+  "item.msmpmod.sword_rephal": "Sword Rephal",
 
-  "block.msmpmod.mush_sign_mnpc08": "Sign MNPC08",
+  "item.msmpmod.foice_first": "Rusty Scythe",
 
-  "block.msmpmod.mush_sign_mnpc09": "Sign MNPC09",
+  "block.msmpmod.mush_sign_mnpc01": "§bSign MNPC01",
 
-  "block.msmpmod.mush_sign_mnpc10": "Sign MNPC10",
+  "block.msmpmod.mush_sign_mnpc02": "§5Sign MNPC02",
+
+  "block.msmpmod.mush_sign_mnpc03": "§eSign MNPC03",
+
+  "block.msmpmod.mush_sign_mnpc04": "§2Sign MNPC04",
+
+  "block.msmpmod.mush_sign_mnpc05": "§3Sign MNPC05",
+
+  "block.msmpmod.mush_sign_mnpc06": "§3Sign MNPC06",
+
+  "block.msmpmod.mush_sign_mnpc07": "§6Sign MNPC07",
+
+  "block.msmpmod.mush_sign_mnpc08": "§aSign MNPC08",
+
+  "block.msmpmod.mush_sign_mnpc09": "§dSign MNPC09",
+
+  "block.msmpmod.mush_sign_mnpc10": "§3Sign MNPC10",
+
+  "block.msmpmod.mush_sign_mnpc11": "§fSign MNPC11",
+
+  "block.msmpmod.mush_sign_ghost": "§cSign GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
 
-  "creativetab.msmp_tab": "MSMP"
+  "creativetab.msmp_tab": "MSMP",
+
+  "creativetab.msmp_tab_weapons": "MSMP WEAPONS"
 }

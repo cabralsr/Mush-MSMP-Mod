@@ -1,13 +1,21 @@
 {
   "block.msmpmod.mush_mushroom": "Mush",
 
-  "block.msmpmod.mush_grass_block": "Grama Infectada",
+  "block.msmpmod.mush_grass_block": "Mythirose Vermelha",
+
+  "block.msmpmod.mush_grassblue_block": "Mythirose Azul",
+
+  "block.msmpmod.mush_grasspurple_block": "Mythirose Roxa",
 
   "block.msmpmod.mush_muss_block": "Musgo Infectada",
 
   "block.msmpmod.mush_sleeping_block": "Infecção Adormecida Musgo",
 
   "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
+
+  "item.msmpmod.necklace_sherina": "§cColar",
+
+  "item.msmpmod.necklace_sherina.tooltip": "§7§oby Sherina",
 
   "item.msmpmod.necklace_heart_frizt": "§cColar de Coração",
 
@@ -25,27 +33,47 @@
 
   "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
 
+  "item.msmpmod.camera_raviel": "§cCamera",
+
+  "item.msmpmod.camera_raviel.tooltip": "§7§oby Raviel",
+
+  "item.msmpmod.mask_luka": "§cMáscara de Kitsune",
+
+  "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
+
+  "item.msmpmod.knife_ghost": "Faca GhostFace",
+
+  "item.msmpmod.sword_rephal": "Espada Rephal",
+
+  "item.msmpmod.foice_first": "Foice Enferrujada",
+
   "block.msmpmod.mush_sign_mnpc01": "§bPlaca MNPC01",
 
   "block.msmpmod.mush_sign_mnpc02": "§5Placa MNPC02",
 
   "block.msmpmod.mush_sign_mnpc03": "§ePlaca MNPC03",
 
-  "block.msmpmod.mush_sign_mnpc04": "Placa MNPC04",
+  "block.msmpmod.mush_sign_mnpc04": "§2Placa MNPC04",
 
   "block.msmpmod.mush_sign_mnpc05": "§3Placa MNPC05",
 
-  "block.msmpmod.mush_sign_mnpc06": "Placa MNPC06",
+  "block.msmpmod.mush_sign_mnpc06": "§3Placa MNPC06",
 
-  "block.msmpmod.mush_sign_mnpc07": "Placa MNPC07",
+  "block.msmpmod.mush_sign_mnpc07": "§6Placa MNPC07",
 
-  "block.msmpmod.mush_sign_mnpc08": "Placa MNPC08",
+  "block.msmpmod.mush_sign_mnpc08": "§aPlaca MNPC08",
 
   "block.msmpmod.mush_sign_mnpc09": "§dPlaca MNPC09",
 
-  "block.msmpmod.mush_sign_mnpc10": "§9Placa MNPC10",
+  "block.msmpmod.mush_sign_mnpc10": "§3Placa MNPC10",
+
+  "block.msmpmod.mush_sign_mnpc11": "§fPlaca MNPC11",
+
+  "block.msmpmod.mush_sign_ghost": "§cPlaca GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
 
-  "creativetab.msmp_tab": "MSMP"
+  "creativetab.msmp_tab": "MSMP",
+
+  "creativetab.msmp_tab_weapons": "MSMP ARMAS"
 }

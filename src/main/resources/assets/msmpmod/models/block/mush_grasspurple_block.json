@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:block/cube_all",
+  "textures" : {
+    "all" : "msmpmod:block/mush_grasspurple_block"
+  }
+}

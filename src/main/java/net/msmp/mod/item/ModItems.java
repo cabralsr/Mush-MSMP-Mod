@@ -8,25 +8,45 @@ import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
 
-import java.awt.*;
-
 public class ModItems {
 
     public static final DeferredRegister<Item>ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MsmpMod.MOD_ID);
 
+    //ESPADAS
+    public static final RegistryObject<Item> KNIFE_GHOST = ITEMS.register("knife_ghost",
+            () -> new CustomSword(Tiers.NETHERITE, 61, 2,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> SWORD_REPHAL = ITEMS.register("sword_rephal",
+            () -> new CustomSword(Tiers.NETHERITE, 83, -2,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> FOICE_FIRST = ITEMS.register("foice_first",
+            () -> new CustomSword(Tiers.NETHERITE, 18, -1.5,
+                    new Item.Properties().stacksTo(1)));
+
     //COLECIONAVEIS GHOSTFACE
+    public static final RegistryObject<Item> NECKLACE_SHERINA = ITEMS.register("necklace_sherina",
+            () -> new TooltipItem(new Item.Properties()));
+
     public static final RegistryObject<Item> NECKLACE_HEART_FRIZT = ITEMS.register("necklace_heart_frizt",
-            () -> new TooltipItem(new Item.Properties().stacksTo(1)));
+            () -> new TooltipItem(new Item.Properties()));
 
     public static final RegistryObject<Item> NECKLACE_MOON_ROSS = ITEMS.register("necklace_moon_ross",
-            () -> new TooltipItem(new Item.Properties().stacksTo(1)));
+            () -> new TooltipItem(new Item.Properties()));
 
     public static final RegistryObject<Item> HAIR_BOW_MINAYAS = ITEMS.register("hair_bow_minayas",
-            () -> new TooltipItem(new Item.Properties().stacksTo(1)));
+            () -> new TooltipItem(new Item.Properties()));
 
     public static final RegistryObject<Item> R_L_POLAROID = ITEMS.register("r_l_polaroid",
-            () -> new TooltipItem(new Item.Properties().stacksTo(1)));
+            () -> new TooltipItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> CAMERA_RAVIEL = ITEMS.register("camera_raviel",
+            () -> new TooltipItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> MASK_LUKA = ITEMS.register("mask_luka",
+            () -> new TooltipItem(new Item.Properties()));
 
     //PLACAS
     public static final RegistryObject<Item> MUSH_SIGN_MNPC01 = ITEMS.register("mush_sign_mnpc01",
@@ -68,6 +88,14 @@ public class ModItems {
     public static final RegistryObject<Item> MUSH_SIGN_MNPC10 = ITEMS.register("mush_sign_mnpc10",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
                     ModBlocks.MUSH_SIGN_MNPC10.get(), ModBlocks.MUSH_WALL_SIGN_MNPC10.get()));
+
+    public static final RegistryObject<Item> MUSH_SIGN_MNPC11 = ITEMS.register("mush_sign_mnpc11",
+            () ->  new SignItem(new Item.Properties().stacksTo(64),
+                    ModBlocks.MUSH_SIGN_MNPC11.get(), ModBlocks.MUSH_WALL_SIGN_MNPC11.get()));
+
+    public static final RegistryObject<Item> MUSH_SIGN_GHOST = ITEMS.register("mush_sign_ghost",
+            () ->  new SignItem(new Item.Properties().stacksTo(64),
+                    ModBlocks.MUSH_SIGN_GHOST.get(), ModBlocks.MUSH_WALL_SIGN_GHOST.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

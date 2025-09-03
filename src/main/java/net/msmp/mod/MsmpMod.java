@@ -2,7 +2,6 @@ package net.msmp.mod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.Sheets;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.msmp.mod.block.ModBlocks;
 import net.msmp.mod.block.entity.ModBlockEntities;
 import net.msmp.mod.entity.ModEntities;
+import net.msmp.mod.event.ModEvents;
 import net.msmp.mod.item.ModCreativeModTabs;
 import net.msmp.mod.item.ModItems;
 import net.msmp.mod.loot.ModLootModifiers;

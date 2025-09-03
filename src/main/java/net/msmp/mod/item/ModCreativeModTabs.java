@@ -21,6 +21,10 @@ public class ModCreativeModTabs {
                         //BLOCOS
                         output.accept(ModBlocks.MUSH_GRASS_BLOCK.get());
 
+                        output.accept(ModBlocks.MUSH_GRASSBLUE_BLOCK.get());
+
+                        output.accept(ModBlocks.MUSH_GRASSPURPLE_BLOCK.get());
+
                         output.accept(ModBlocks.MUSH_MUSS_BLOCK.get());
 
                         output.accept(ModBlocks.MUSH_SLEEPING_BLOCK.get());
@@ -29,6 +33,8 @@ public class ModCreativeModTabs {
 
                         //COLECIONAVEIS GHOSTFACE
 
+                        output.accept(ModItems.NECKLACE_SHERINA.get());
+
                         output.accept(ModItems.NECKLACE_HEART_FRIZT.get());
 
                         output.accept(ModItems.NECKLACE_MOON_ROSS.get());
@@ -36,6 +42,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HAIR_BOW_MINAYAS.get());
 
                         output.accept(ModItems.R_L_POLAROID.get());
+
+                        output.accept(ModItems.CAMERA_RAVIEL.get());
+
+                        output.accept(ModItems.MASK_LUKA.get());
 
                         //PLACAS
                         output.accept(ModItems.MUSH_SIGN_MNPC01.get());
@@ -57,9 +67,27 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MUSH_SIGN_MNPC09.get());
 
                         output.accept(ModItems.MUSH_SIGN_MNPC10.get());
+
+                        output.accept(ModItems.MUSH_SIGN_MNPC11.get());
+
+                        output.accept(ModItems.MUSH_SIGN_GHOST.get());
+
                     })
                     .title(Component.translatable("creativetab.msmp_tab"))
                     .build());
+
+    public static final RegistryObject<CreativeModeTab> MSMP_TAB_WEAPONS = CREATIVE_MODE_TABS.register("msmp_tab_weapons",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KNIFE_GHOST.get()))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.KNIFE_GHOST.get());
+
+                        output.accept(ModItems.SWORD_REPHAL.get());
+
+                        output.accept(ModItems.FOICE_FIRST.get());
+
+                    }).title(Component.translatable("creativetab.msmp_tab_weapons")).build());
+
 
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

@@ -27,8 +27,7 @@ public class ModStandingSingBlock extends StandingSignBlock {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        pTooltip.add(Component.translatable("tooltip.msmpmod.signs")
-                .withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+        pTooltip.add(Component.translatable("tooltip.msmpmod.signs"));
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 
