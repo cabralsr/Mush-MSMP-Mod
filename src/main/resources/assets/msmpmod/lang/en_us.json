@@ -13,6 +13,10 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
+  "item.msmpmod.clicker_spawn_egg":"Clicker Spawn Egg",
+
+  "entity.msmpmod.clicker": "Clicker",
+
   "item.msmpmod.necklace_sherina": "§cNecklace",
 
   "item.msmpmod.necklace_sherina.tooltip": "§7§oby Sherina",

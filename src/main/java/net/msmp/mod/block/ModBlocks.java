@@ -40,64 +40,88 @@ public class ModBlocks {
 
     //PLACAS
     public static final RegistryObject<Block> MUSH_SIGN_MNPC01 = BLOCKS.register("mush_sign_mnpc01",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN01));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN01));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC01 = BLOCKS.register("mush_wall_sign_mnpc01",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN01));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN01));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC02 = BLOCKS.register("mush_sign_mnpc02",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN02));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN02));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC02 = BLOCKS.register("mush_wall_sign_mnpc02",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN02));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN02));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC03 = BLOCKS.register("mush_sign_mnpc03",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN03));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN03));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC03 = BLOCKS.register("mush_wall_sign_mnpc03",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN03));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN03));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC04 = BLOCKS.register("mush_sign_mnpc04",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN04));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN04));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC04 = BLOCKS.register("mush_wall_sign_mnpc04",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN04));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN04));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC05 = BLOCKS.register("mush_sign_mnpc05",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN05));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN05));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC05 = BLOCKS.register("mush_wall_sign_mnpc05",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN05));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN05));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC06 = BLOCKS.register("mush_sign_mnpc06",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN06));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN06));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC06 = BLOCKS.register("mush_wall_sign_mnpc06",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN06));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN06));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC07 = BLOCKS.register("mush_sign_mnpc07",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN07));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN07));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC07 = BLOCKS.register("mush_wall_sign_mnpc07",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN07));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN07));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC08 = BLOCKS.register("mush_sign_mnpc08",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN08));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN08));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC08 = BLOCKS.register("mush_wall_sign_mnpc08",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN08));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN08));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC09 = BLOCKS.register("mush_sign_mnpc09",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN09));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN09));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC09 = BLOCKS.register("mush_wall_sign_mnpc09",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN09));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN09));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC10 = BLOCKS.register("mush_sign_mnpc10",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN10));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN10));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC10 = BLOCKS.register("mush_wall_sign_mnpc10",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN10));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN10));
 
     public static final RegistryObject<Block> MUSH_SIGN_MNPC11 = BLOCKS.register("mush_sign_mnpc11",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN11));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN11));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_MNPC11 = BLOCKS.register("mush_wall_sign_mnpc11",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN11));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_MUSHIN11));
 
     public static final RegistryObject<Block> MUSH_SIGN_GHOST = BLOCKS.register("mush_sign_ghost",
-            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_GHOST));
+            () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_GHOST));
     public static final RegistryObject<Block> MUSH_WALL_SIGN_GHOST = BLOCKS.register("mush_wall_sign_ghost",
-            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f).noParticlesOnBreak(), ModWoodTypes.PLACA_GHOST));
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)
+                    .sound(SoundType.WOOD).noParticlesOnBreak(), ModWoodTypes.PLACA_GHOST));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

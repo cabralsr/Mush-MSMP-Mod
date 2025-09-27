@@ -83,6 +83,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
+
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }

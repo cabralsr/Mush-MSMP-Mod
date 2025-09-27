@@ -1,12 +1,14 @@
 package net.msmp.mod.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
+import net.msmp.mod.entity.ModEntityTypes;
 
 public class ModItems {
 
@@ -51,51 +53,94 @@ public class ModItems {
     //PLACAS
     public static final RegistryObject<Item> MUSH_SIGN_MNPC01 = ITEMS.register("mush_sign_mnpc01",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC01.get(), ModBlocks.MUSH_WALL_SIGN_MNPC01.get()));
+                    ModBlocks.MUSH_SIGN_MNPC01.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC01.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC02 = ITEMS.register("mush_sign_mnpc02",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC02.get(), ModBlocks.MUSH_WALL_SIGN_MNPC02.get()));
+                    ModBlocks.MUSH_SIGN_MNPC02.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC02.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC03 = ITEMS.register("mush_sign_mnpc03",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC03.get(), ModBlocks.MUSH_WALL_SIGN_MNPC03.get()));
+                    ModBlocks.MUSH_SIGN_MNPC03.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC03.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC04 = ITEMS.register("mush_sign_mnpc04",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC04.get(), ModBlocks.MUSH_WALL_SIGN_MNPC04.get()));
+                    ModBlocks.MUSH_SIGN_MNPC04.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC04.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC05 = ITEMS.register("mush_sign_mnpc05",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC05.get(), ModBlocks.MUSH_WALL_SIGN_MNPC05.get()));
+                    ModBlocks.MUSH_SIGN_MNPC05.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC05.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC06 = ITEMS.register("mush_sign_mnpc06",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC06.get(), ModBlocks.MUSH_WALL_SIGN_MNPC06.get()));
+                    ModBlocks.MUSH_SIGN_MNPC06.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC06.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC07 = ITEMS.register("mush_sign_mnpc07",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC07.get(), ModBlocks.MUSH_WALL_SIGN_MNPC07.get()));
+                    ModBlocks.MUSH_SIGN_MNPC07.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC07.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC08 = ITEMS.register("mush_sign_mnpc08",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC08.get(), ModBlocks.MUSH_WALL_SIGN_MNPC08.get()));
+                    ModBlocks.MUSH_SIGN_MNPC08.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC08.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC09 = ITEMS.register("mush_sign_mnpc09",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC09.get(), ModBlocks.MUSH_WALL_SIGN_MNPC09.get()));
+                    ModBlocks.MUSH_SIGN_MNPC09.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC09.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC10 = ITEMS.register("mush_sign_mnpc10",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC10.get(), ModBlocks.MUSH_WALL_SIGN_MNPC10.get()));
+                    ModBlocks.MUSH_SIGN_MNPC10.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC10.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_MNPC11 = ITEMS.register("mush_sign_mnpc11",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_MNPC11.get(), ModBlocks.MUSH_WALL_SIGN_MNPC11.get()));
+                    ModBlocks.MUSH_SIGN_MNPC11.get(),
+                    ModBlocks.MUSH_WALL_SIGN_MNPC11.get()
+            )
+    );
 
     public static final RegistryObject<Item> MUSH_SIGN_GHOST = ITEMS.register("mush_sign_ghost",
             () ->  new SignItem(new Item.Properties().stacksTo(64),
-                    ModBlocks.MUSH_SIGN_GHOST.get(), ModBlocks.MUSH_WALL_SIGN_GHOST.get()));
+                    ModBlocks.MUSH_SIGN_GHOST.get(),
+                    ModBlocks.MUSH_WALL_SIGN_GHOST.get()
+            )
+    );
+
+    public static final RegistryObject<Item> CLICKER_SPAWN_EGG = ITEMS.register("clicker_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    ModEntityTypes.SEU_MOB, // 1. O tipo de entidade que este ovo irá invocar
+                    0xFFFFFF,            // 2. A cor primária do ovo (ex: marrom escuro)
+                    0xA9A9A9,            // 3. A cor secundária (das manchas) (ex: bege)
+                    new Item.Properties())); // 4. Propriedades do item
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

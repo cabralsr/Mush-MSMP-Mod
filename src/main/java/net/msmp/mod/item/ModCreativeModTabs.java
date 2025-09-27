@@ -9,6 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
+//import net.msmp.mod.entity.ModEntityTypes;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -71,6 +72,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MUSH_SIGN_MNPC11.get());
 
                         output.accept(ModItems.MUSH_SIGN_GHOST.get());
+
+                        output.accept(ModItems.CLICKER_SPAWN_EGG.get());
 
                     })
                     .title(Component.translatable("creativetab.msmp_tab"))
