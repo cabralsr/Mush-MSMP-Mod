@@ -1,0 +1,21 @@
+{
+  "entity.msmpmod.clicker.ambient": {
+    "subtitle": "subtitles.msmpmod.clicker.ambient",
+    "sounds": [
+      "msmpmod:mob/clicker/ambient1",
+      "msmpmod:mob/clicker/ambient2"
+    ]
+  },
+  "entity.msmpmod.clicker.hurt": {
+    "subtitle": "subtitles.msmpmod.clicker.hurt",
+    "sounds": [ "msmpmod:mob/clicker/hurt" ]
+  },
+  "entity.msmpmod.clicker.death": {
+    "subtitle": "subtitles.msmpmod.clicker.death",
+    "sounds": [ "msmpmod:mob/clicker/death" ]
+  },
+  "entity.msmpmod.clicker.step": {
+    "subtitle": "subtitles.msmpmod.clicker.step",
+    "sounds": [ "msmpmod:mob/clicker/step" ]
+  }
+}

@@ -18,6 +18,7 @@ import net.msmp.mod.entity.ModEntityTypes;
 import net.msmp.mod.item.ModCreativeModTabs;
 import net.msmp.mod.item.ModItems;
 import net.msmp.mod.loot.ModLootModifiers;
+import net.msmp.mod.util.ModSounds;
 import net.msmp.mod.util.ModWoodTypes;
 import org.slf4j.Logger;
 
