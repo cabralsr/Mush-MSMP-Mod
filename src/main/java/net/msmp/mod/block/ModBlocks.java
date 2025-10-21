@@ -21,13 +21,13 @@ public class ModBlocks {
 
     //Blocos
     public static final RegistryObject<Block> MUSH_GRASS_BLOCK = registerBlock("mush_grass_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
+            () -> new MushBlock(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> MUSH_GRASSBLUE_BLOCK = registerBlock("mush_grassblue_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
+            () -> new MushBlockNausea(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> MUSH_GRASSPURPLE_BLOCK = registerBlock("mush_grasspurple_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
+            () -> new MushBlockDarkness(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
 
     public static final RegistryObject<Block> MUSH_MUSS_BLOCK = registerBlock("mush_muss_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SOUL_SAND).sound(SoundType.GRASS).strength(-1.0F)));

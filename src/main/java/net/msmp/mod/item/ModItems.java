@@ -17,11 +17,11 @@ public class ModItems {
 
     //ESPADAS
     public static final RegistryObject<Item> KNIFE_GHOST = ITEMS.register("knife_ghost",
-            () -> new CustomSword(Tiers.NETHERITE, 61, 2,
+            () -> new CustomSword(Tiers.NETHERITE, 30, 2,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SWORD_REPHAL = ITEMS.register("sword_rephal",
-            () -> new CustomSword(Tiers.NETHERITE, 83, -2,
+            () -> new CustomSword(Tiers.NETHERITE, 40, -2,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> FOICE_FIRST = ITEMS.register("foice_first",
