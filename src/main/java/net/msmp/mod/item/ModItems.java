@@ -28,6 +28,14 @@ public class ModItems {
             () -> new CustomSword(Tiers.NETHERITE, 18, -1.5,
                     new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> FOICE_CANIBAL = ITEMS.register("foice_canibal",
+            () -> new CustomSword(Tiers.NETHERITE, 18, -1.5,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> ADAGA_SANGUE = ITEMS.register("adaga_sangue",
+            () -> new CustomSword(Tiers.NETHERITE, 21, -0.5,
+                    new Item.Properties().stacksTo(1)));
+
     //COLECIONAVEIS GHOSTFACE
     public static final RegistryObject<Item> NECKLACE_SHERINA = ITEMS.register("necklace_sherina",
             () -> new TooltipItem(new Item.Properties()));

@@ -1,0 +1,18 @@
+{
+  "parent" : "minecraft:item/handheld",
+  "loader" : "forge:separate_transforms",
+  "base": {
+    "parent" : "msmpmod:item/adaga_sangue_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "msmpmod:item/adaga_sangue_3d"
+    },
+    "ground": {
+      "parent": "msmpmod:item/adaga_sangue_3d"
+    },
+    "fixed": {
+      "parent": "msmpmod:item/adaga_sangue_3d"
+    }
+  }
+}

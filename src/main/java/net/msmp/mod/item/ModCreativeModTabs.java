@@ -89,6 +89,10 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.FOICE_FIRST.get());
 
+                        output.accept(ModItems.ADAGA_SANGUE.get());
+
+                        output.accept(ModItems.FOICE_CANIBAL.get());
+
                     }).title(Component.translatable("creativetab.msmp_tab_weapons")).build());
 
 
