@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.msmp.mod.block.ModBlocks;
 import net.msmp.mod.block.entity.ModBlockEntities;
+import net.msmp.mod.effects.ModEffects;
 import net.msmp.mod.entity.ModEntityTypes;
 import net.msmp.mod.item.ModCreativeModTabs;
 import net.msmp.mod.item.ModItems;
@@ -38,6 +39,8 @@ public class MsmpMod {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         ModBlocks.register(modEventBus);
 
