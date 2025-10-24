@@ -1,6 +1,8 @@
 {
   "block.msmpmod.mush.mushroom": "Mush",
 
+  "_comment": "Blocks",
+
   "block.msmpmod.mush_grass_block": "Red Mythirose",
 
   "block.msmpmod.mush_grassblue_block": "Blue Mythirose",
@@ -13,13 +15,13 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
+  "_comment": "Spawner's",
+
   "item.msmpmod.clicker_spawn_egg":"Clicker Spawn Egg",
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "item.msmpmod.necklace_sherina": "§cNecklace",
-
-  "item.msmpmod.necklace_sherina.tooltip": "§7§oby Sherina",
+  "_comment": "Player Items",
 
   "item.msmpmod.necklace_heart_frizt": "§cHeart Necklace",
 
@@ -47,6 +49,8 @@
 
   "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
 
+  "_comment": "Sword's",
+
   "item.msmpmod.adaga_sangue": "Blood Dagger",
 
   "item.msmpmod.knife_ghost": "GhostFace Knife",
@@ -57,7 +61,11 @@
 
   "item.msmpmod.foice_canibal": "Cannibal's Scythe",
 
+  "_comment": "Effects",
+
   "effect.msmpmod.bleeding": "Bleeding",
+
+  "_comment": "Sign's",
 
   "block.msmpmod.mush_sign_mnpc01": "§bSign MNPC01",
 
@@ -84,6 +92,8 @@
   "block.msmpmod.mush_sign_ghost": "§cSign GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "_comment": "Tab Title",
 
   "creativetab.msmp_tab": "MSMP",
 

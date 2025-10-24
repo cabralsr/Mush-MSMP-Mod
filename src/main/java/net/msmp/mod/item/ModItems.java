@@ -37,8 +37,6 @@ public class ModItems {
                     new Item.Properties().stacksTo(1)));
 
     //COLECIONAVEIS GHOSTFACE
-    public static final RegistryObject<Item> NECKLACE_SHERINA = ITEMS.register("necklace_sherina",
-            () -> new TooltipItem(new Item.Properties()));
 
     public static final RegistryObject<Item> NECKLACE_HEART_FRIZT = ITEMS.register("necklace_heart_frizt",
             () -> new TooltipItem(new Item.Properties()));
@@ -143,12 +141,14 @@ public class ModItems {
             )
     );
 
+    //Spawner's
+
     public static final RegistryObject<Item> CLICKER_SPAWN_EGG = ITEMS.register("clicker_spawn_egg",
             () -> new ForgeSpawnEggItem(
-                    ModEntityTypes.SEU_MOB, // 1. O tipo de entidade que este ovo irá invocar
-                    0xFFFFFF,            // 2. A cor primária do ovo (ex: marrom escuro)
-                    0xA9A9A9,            // 3. A cor secundária (das manchas) (ex: bege)
-                    new Item.Properties())); // 4. Propriedades do item
+                    ModEntityTypes.SEU_MOB,
+                    0xFFFFFF,
+                    0xA9A9A9,
+                    new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

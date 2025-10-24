@@ -1,6 +1,8 @@
 {
   "block.msmpmod.mush_mushroom": "Mush",
 
+  "_comment": "Blocos",
+
   "block.msmpmod.mush_grass_block": "Mythirose Vermelha",
 
   "block.msmpmod.mush_grassblue_block": "Mythirose Azul",
@@ -13,13 +15,13 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
 
+  "_comment": "Spawner's",
+
   "item.msmpmod.clicker_spawn_egg":"Clicker Spawn Egg",
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "item.msmpmod.necklace_sherina": "§cColar",
-
-  "item.msmpmod.necklace_sherina.tooltip": "§7§oby Sherina",
+  "_comment": "Item's Player's",
 
   "item.msmpmod.necklace_heart_frizt": "§cColar de Coração",
 
@@ -45,6 +47,8 @@
 
   "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
 
+  "_comment": "Armas",
+
   "item.msmpmod.adaga_sangue": "Adaga de Sangue",
 
   "item.msmpmod.knife_ghost": "Faca GhostFace",
@@ -55,7 +59,11 @@
 
   "item.msmpmod.foice_canibal": "Foice do Canibal",
 
+  "_comment": "Efeitos",
+
   "effect.msmpmod.bleeding": "Sangramento",
+
+  "_comment": "Placas",
 
   "block.msmpmod.mush_sign_mnpc01": "§bPlaca MNPC01",
 
@@ -82,6 +90,8 @@
   "block.msmpmod.mush_sign_ghost": "§cPlaca GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "_comment": "Titulos Abas",
 
   "creativetab.msmp_tab": "MSMP",
 

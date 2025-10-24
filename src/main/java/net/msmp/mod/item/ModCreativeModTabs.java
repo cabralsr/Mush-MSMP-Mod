@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         //BLOCOS
+
                         output.accept(ModBlocks.MUSH_GRASS_BLOCK.get());
 
                         output.accept(ModBlocks.MUSH_GRASSBLUE_BLOCK.get());
@@ -34,8 +35,6 @@ public class ModCreativeModTabs {
 
                         //COLECIONAVEIS GHOSTFACE
 
-                        output.accept(ModItems.NECKLACE_SHERINA.get());
-
                         output.accept(ModItems.NECKLACE_HEART_FRIZT.get());
 
                         output.accept(ModItems.NECKLACE_MOON_ROSS.get());
@@ -49,6 +48,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MASK_LUKA.get());
 
                         //PLACAS
+
                         output.accept(ModItems.MUSH_SIGN_MNPC01.get());
 
                         output.accept(ModItems.MUSH_SIGN_MNPC02.get());
@@ -72,6 +72,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MUSH_SIGN_MNPC11.get());
 
                         output.accept(ModItems.MUSH_SIGN_GHOST.get());
+
+                        //Spawner's
 
                         output.accept(ModItems.CLICKER_SPAWN_EGG.get());
 

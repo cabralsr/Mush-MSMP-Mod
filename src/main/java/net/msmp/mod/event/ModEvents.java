@@ -18,7 +18,6 @@ import net.msmp.mod.item.ModItems;
 public class ModEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
-        // Associe os atributos ao seu mob recém-registrado
         event.put(ModEntityTypes.SEU_MOB.get(), TestEntity.createAttributes().build());
     }
 }

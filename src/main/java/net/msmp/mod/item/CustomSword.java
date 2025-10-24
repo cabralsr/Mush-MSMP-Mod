@@ -20,7 +20,7 @@ public class CustomSword extends SwordItem {
 
             target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 2), attacker);
 
-            target.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 200, 0, false, true, false), attacker);
+            target.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 200, 0, false, false, false), attacker);
         }
         return super.hurtEnemy(stack, target, attacker);
     }
