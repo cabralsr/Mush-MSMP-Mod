@@ -36,6 +36,10 @@ public class ModItems {
             () -> new CustomSword(Tiers.NETHERITE, 21, -0.5,
                     new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> AXE_GUITTAR = ITEMS.register("axe_guittar",
+            () -> new CustomSword(Tiers.NETHERITE, 26, -3,
+                    new Item.Properties().stacksTo(1)));
+
     //COLECIONAVEIS GHOSTFACE
 
     public static final RegistryObject<Item> NECKLACE_HEART_FRIZT = ITEMS.register("necklace_heart_frizt",

@@ -2,7 +2,10 @@ package net.msmp.mod.entity.custom;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -11,6 +14,7 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.msmp.mod.effects.ModEffects;
 import net.msmp.mod.util.ModSounds;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -58,10 +62,10 @@ public class TestEntity extends PathfinderMob implements GeoEntity {
 
     public static AttributeSupplier.Builder createAttributes() {
         return PathfinderMob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 100.0D)
+                .add(Attributes.MAX_HEALTH, 250.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.5D)
-                .add(Attributes.ATTACK_DAMAGE, 15.0D)
-                .add(Attributes.ARMOR, 5D)
+                .add(Attributes.ATTACK_DAMAGE, 20.0D)
+                .add(Attributes.ARMOR, 7D)
                 .add(Attributes.ATTACK_SPEED, 2D)
                 .add(Attributes.FOLLOW_RANGE, 32.0D);
     }
@@ -89,18 +93,26 @@ public class TestEntity extends PathfinderMob implements GeoEntity {
         return PlayState.CONTINUE;
     }
 
-//    @Override
-//    public void tick() {
-//        super.tick();
-//
-//        // Esta lógica define quando o mob deve correr.
-//        // Se ele tiver um alvo, a variável 'sprinting' se torna verdadeira.
-//        // Se ele perder o alvo, a variável volta a ser falsa.
-//        this.setSprinting(this.getTarget() != null);
-//    }
+    @Override
+    public boolean doHurtTarget(Entity target) {
+        boolean attackSuccessful = super.doHurtTarget(target);
 
+        if (attackSuccessful && target instanceof LivingEntity) {
+            if (!this.level().isClientSide()) {
+                LivingEntity livingTarget = (LivingEntity) target;
+                livingTarget.addEffect(new MobEffectInstance(
+                        ModEffects.BLEEDING.get(),
+                        100,
+                        2,
+                        false,
+                        false,
+                        false
+                ));
+            }
+        }
 
-
+        return attackSuccessful;
+    }
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {

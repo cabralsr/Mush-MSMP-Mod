@@ -95,6 +95,8 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.FOICE_CANIBAL.get());
 
+                        output.accept(ModItems.AXE_GUITTAR.get());
+
                     }).title(Component.translatable("creativetab.msmp_tab_weapons")).build());
 
 
