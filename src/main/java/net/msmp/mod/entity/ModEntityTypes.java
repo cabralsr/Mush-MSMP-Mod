@@ -16,7 +16,7 @@ public class ModEntityTypes {
 
     // 2. Registre sua entidade
     public static final RegistryObject<EntityType<TestEntity>> SEU_MOB =
-            ENTITY_TYPES.register("clicker", // O ID do seu mob. Ex: "seu_mod_id:seu_mob"
+            ENTITY_TYPES.register("clicker",
                     () -> EntityType.Builder.of(TestEntity::new, MobCategory.MONSTER)
                             .sized(0.8f, 1.5f) // Largura e Altura do hitbox
                             .build(ResourceLocation.fromNamespaceAndPath(MsmpMod.MOD_ID, "clicker").toString()));
