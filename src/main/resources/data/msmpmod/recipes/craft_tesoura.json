@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " FF",
+    " FF",
+    "F  "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "msmpmod:tesoura_quebrada",
+    "count": 1
+  }
+}

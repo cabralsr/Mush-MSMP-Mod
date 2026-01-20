@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "V  ",
+    "V  "
+  ],
+  "key": {
+    "V": {
+      "item": "msmpmod:vidro_estilhacado"
+    }
+  },
+  "result": {
+    "item": "msmpmod:ampola_vazia",
+    "count": 2
+  }
+}

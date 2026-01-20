@@ -42,6 +42,8 @@ public class MsmpMod {
 
         ModEffects.register(modEventBus);
 
+        net.msmp.mod.sound.ModSound.register(modEventBus);
+
         ModBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
@@ -60,7 +62,7 @@ public class MsmpMod {
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        net.msmp.mod.networking.ModMessages.register();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
@@ -82,7 +84,6 @@ public class MsmpMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            //ADICIONAR O NOME DA TEXTURA DAS PLACAS
             Sheets.addWoodType(ModWoodTypes.PLACA_MUSHIN01);
             Sheets.addWoodType(ModWoodTypes.PLACA_MUSHIN02);
             Sheets.addWoodType(ModWoodTypes.PLACA_MUSHIN03);

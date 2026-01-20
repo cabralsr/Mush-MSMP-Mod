@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "entries": [
+    "msmpmod:find_agulha_vazia",
+    "msmpmod:find_ampola_vazia",
+    "msmpmod:find_arame_farpado",
+    "msmpmod:find_bateria",
+    "msmpmod:find_fio_de_cobre",
+    "msmpmod:find_fita",
+    "msmpmod:find_garrafa_agua",
+    "msmpmod:find_garrafa_agua_vazia",
+    "msmpmod:find_garrafa_vidro",
+    "msmpmod:find_kitprimeiros",
+    "msmpmod:find_lamina",
+    "msmpmod:find_pilhas",
+    "msmpmod:find_pregos",
+    "msmpmod:find_remedios",
+    "msmpmod:find_sucata",
+    "msmpmod:find_tabuas",
+    "msmpmod:find_tesoura_quebrada",
+    "msmpmod:find_trapos",
+    "msmpmod:find_vidro_estilhacado"
+  ]
+}

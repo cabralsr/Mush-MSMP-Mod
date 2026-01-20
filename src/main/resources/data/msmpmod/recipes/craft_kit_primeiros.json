@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "RAR",
+    "TTT"
+  ],
+  "key": {
+    "R": {
+      "item": "msmpmod:remedios"
+    },
+    "P": {
+      "item": "msmpmod:ampola_vazia"
+    },
+    "A": {
+      "item": "msmpmod:agulha_vazia"
+    },
+    "S": {
+      "item": "msmpmod:tesoura_quebrada"
+    },
+    "T": {
+      "item": "msmpmod:trapos"
+    }
+  },
+  "result": {
+    "item": "msmpmod:kit_primeiros_socorros",
+    "count": 2
+  }
+}

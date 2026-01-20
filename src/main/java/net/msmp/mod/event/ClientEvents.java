@@ -1,20 +1,37 @@
 package net.msmp.mod.event;
 
-import net.minecraft.resources.ResourceLocation;
+
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.msmp.mod.MsmpMod;
+import net.msmp.mod.block.entity.ModBlockEntities;
+import net.msmp.mod.client.renderer.InvisiblePregoRenderer;
+import net.msmp.mod.client.renderer.PlushieRenderer;
 import net.msmp.mod.entity.ModEntityTypes;
-import net.msmp.mod.entity.render.TesteRenderer;
+import net.msmp.mod.entity.render.*;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 
-@Mod.EventBusSubscriber(modid = MsmpMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = MsmpMod.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientEvents {
     @SubscribeEvent
     public static void registerEntityRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.SEU_MOB.get(), TesteRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.KAIROS_MOB.get(), KairosRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.MOBFINAL_MOB.get(), mobRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.MOLOTOV_PROJECTILE.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.GRANADA_PROJECTILE.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.BOMBA_DE_PREGO_PROJECTILE.get(), ThrownItemRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.PREGO_PROJECTILE.get(), InvisiblePregoRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.PLUSHIE_BE.get(), PlushieRenderer::new);
+    }
+
+
+    @SubscribeEvent
+    public static void registerGuiOverlays(RegisterGuiOverlaysEvent event) {
+        event.registerAboveAll("thirst", ThirstHudOverlay.HUD_THIRST);
     }
 }

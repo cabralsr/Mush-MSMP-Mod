@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VV ",
+    "VV ",
+    "VV "
+  ],
+  "key": {
+    "V": {
+      "item": "msmpmod:vidro_estilhacado"
+    }
+  },
+  "result": {
+    "item": "msmpmod:garrafa_vidro",
+    "count": 1
+  }
+}

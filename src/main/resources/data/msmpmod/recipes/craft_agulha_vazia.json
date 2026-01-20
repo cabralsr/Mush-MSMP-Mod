@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    " F ",
+    " G "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:iron_nugget"
+    },
+    "G": {
+      "item": "msmpmod:garrafa_vidro"
+    }
+  },
+  "result": {
+    "item": "msmpmod:agulha_vazia",
+    "count": 2
+  }
+}

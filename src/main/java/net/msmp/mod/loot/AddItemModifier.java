@@ -1,5 +1,7 @@
 package net.msmp.mod.loot;
 
+import com.google.common.base.Supplier;
+import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -12,29 +14,25 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Supplier;
-
 public class AddItemModifier extends LootModifier {
-
-    public static final Supplier<Codec<AddItemModifier>> CODEC = () ->
-            RecordCodecBuilder.create(inst -> codecStart(inst)
-                    .and(ForgeRegistries.ITEMS.getCodec()
-                            .fieldOf("item").forGetter(m -> m.item))
-                    .apply(inst, AddItemModifier::new));
+    public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(()
+            -> RecordCodecBuilder.create(inst -> codecStart(inst).and(
+            ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(m -> m.item)
+    ).apply(inst, AddItemModifier::new)));
 
     private final Item item;
 
-    public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
+    protected AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        generatedLoot.add(new ItemStack(this.item));
+        // Chance extra de adicionar o item (pode ajustar a lógica se quiser quantidade > 1)
+        generatedLoot.add(new ItemStack(item));
         return generatedLoot;
     }
-
 
     @Override
     public Codec<? extends IGlobalLootModifier> codec() {

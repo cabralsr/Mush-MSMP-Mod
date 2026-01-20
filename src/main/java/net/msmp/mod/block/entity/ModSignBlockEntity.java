@@ -22,11 +22,9 @@ public class ModSignBlockEntity extends SignBlockEntity {
     public void onLoad() {
         super.onLoad();
 
-        // Força o glow no texto da frente
         SignText front = this.getFrontText().setHasGlowingText(true);
         this.setText(front, true);
 
-        // Força o glow no texto de trás, se quiser (opcional)
         SignText back = this.getBackText().setHasGlowingText(true);
         this.setText(back, false);
 

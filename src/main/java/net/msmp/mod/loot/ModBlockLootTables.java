@@ -21,7 +21,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     public void generate() {
-        // Exemplo: drop simples da própria placa
         this.dropSelf(ModBlocks.MUSH_SIGN_MNPC01.get());
         this.dropSelf(ModBlocks.MUSH_WALL_SIGN_MNPC01.get());
     }

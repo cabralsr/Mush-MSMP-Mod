@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "IA ",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "item": "msmpmod:agulha_vazia"
+    },
+    "A": {
+      "item": "msmpmod:ampola_adrenaline"
+    }
+  },
+  "result": {
+    "item": "msmpmod:agulha_ampola_adrenaline",
+    "count": 1
+  }
+}

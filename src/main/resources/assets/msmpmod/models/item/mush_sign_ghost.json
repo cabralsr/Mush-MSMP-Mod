@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "msmpmod:item/placa_ghost"
+    "layer0": "msmpmod:item/placas/placa_ghost"
   }
 }

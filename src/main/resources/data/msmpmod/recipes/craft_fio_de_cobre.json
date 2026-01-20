@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CLC",
+    " C "
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "msmpmod:lamina"
+    }
+  },
+  "result": {
+    "item": "msmpmod:fio_de_cobre",
+    "count": 4
+  }
+}

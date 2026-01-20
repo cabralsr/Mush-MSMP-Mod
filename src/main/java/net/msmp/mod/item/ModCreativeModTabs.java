@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
-//import net.msmp.mod.entity.ModEntityTypes;
+import net.msmp.mod.entity.ModEntityTypes;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,7 +19,7 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MUSH_SIGN_MNPC01.get()))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        //BLOCOS
+                        // BLOCOS
 
                         output.accept(ModBlocks.MUSH_GRASS_BLOCK.get());
 
@@ -33,21 +33,15 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.MUSH_SLEEPING_GRASS_BLOCK.get());
 
-                        //COLECIONAVEIS GHOSTFACE
+                        output.accept(ModItems.EKKO_PLUSHIE.get());
 
-                        output.accept(ModItems.NECKLACE_HEART_FRIZT.get());
+                        output.accept(ModItems.ASTRO_PLUSHIE.get());
 
-                        output.accept(ModItems.NECKLACE_MOON_ROSS.get());
+                        output.accept(ModItems.ARTHEMIS_PLUSHIE.get());
 
-                        output.accept(ModItems.HAIR_BOW_MINAYAS.get());
+                        output.accept(ModItems.SUZZY_PLUSHIE.get());
 
-                        output.accept(ModItems.R_L_POLAROID.get());
-
-                        output.accept(ModItems.CAMERA_RAVIEL.get());
-
-                        output.accept(ModItems.MASK_LUKA.get());
-
-                        //PLACAS
+                        // PLACAS
 
                         output.accept(ModItems.MUSH_SIGN_MNPC01.get());
 
@@ -73,10 +67,15 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.MUSH_SIGN_GHOST.get());
 
-                        //Spawner's
+                        // Frasco/Comida
+
+                        output.accept(ModItems.FUNGO_VINHO.get());
+
+                        output.accept(ModItems.FRASC0.get());
+
+                        // Spawner's
 
                         output.accept(ModItems.CLICKER_SPAWN_EGG.get());
-
                     })
                     .title(Component.translatable("creativetab.msmp_tab"))
                     .build());
@@ -97,7 +96,103 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.AXE_GUITTAR.get());
 
+                        output.accept(ModItems.MOLOTOV.get());
+
+                        output.accept(ModItems.GRANADA.get());
+
+                        output.accept(ModItems.BOMBA_DE_PREGO.get());
+
+                        output.accept(ModItems.GAS_MASK.get());
+
                     }).title(Component.translatable("creativetab.msmp_tab_weapons")).build());
+
+    public static final RegistryObject<CreativeModeTab> MSMP_TAB_VHS = CREATIVE_MODE_TABS.register("msmp_tab_vhs",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VHS_MUSIC_1.get()))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        //TOCA VHS
+                        output.accept(ModBlocks.VHS_PLAYER.get());
+
+                        //VHS
+                        output.accept(ModItems.VHS_MUSIC_1.get());
+
+                    }).title(Component.translatable("creativetab.msmp_tab_vhs")).build());
+
+    public static final RegistryObject<CreativeModeTab> MSMP_TAB_FOODS = CREATIVE_MODE_TABS.register("msmp_tab_foods",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.REFRI1.get()))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.GARRAFA_AGUA.get());
+
+                        output.accept(ModItems.GARRAFA_AGUA_VAZIA.get());
+
+                        output.accept(ModItems.REFRI1.get());
+
+                        output.accept(ModItems.REFRI2.get());
+
+                        output.accept(ModItems.REFRI3.get());
+
+                        output.accept(ModItems.WHISKY.get());
+
+                        output.accept(ModItems.CERVEJA1.get());
+
+                        output.accept(ModItems.CERVEJA2.get());
+
+                        output.accept(ModItems.COMIDA_CONSERVA1.get());
+
+                        output.accept(ModItems.COMIDA_CONSERVA2.get());
+
+                        output.accept(ModItems.COMIDA_CONSERVA3.get());
+
+                        output.accept(ModItems.CANTIL_VAZIO.get());
+
+                    }).title(Component.translatable("creativetab.msmp_tab_foods")).build());
+
+    public static final RegistryObject<CreativeModeTab> MSMP_TAB_RESOURCE = CREATIVE_MODE_TABS.register("msmp_tab_resource",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PREGOS.get()))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.PREGOS.get());
+
+                        output.accept(ModItems.TABUAS.get());
+
+                        output.accept(ModItems.SUCATAS.get());
+
+                        output.accept(ModItems.PILHAS.get());
+
+                        output.accept(ModItems.BATERIA.get());
+
+                        output.accept(ModItems.FIO_DE_COBRE.get());
+
+                        output.accept(ModItems.ARAME_FARPADO.get());
+
+                        output.accept(ModItems.VIDRO_ESTILHACADO.get());
+
+                        output.accept(ModItems.GARRAFA_VIDRO.get());
+
+                        output.accept(ModItems.LAMINA.get());
+
+                        output.accept(ModItems.TESOURA_QUEBRADA.get());
+
+                        output.accept(ModItems.TRAPOS.get());
+
+                        output.accept(ModItems.FITA.get());
+
+                        output.accept(ModItems.AGULHA_AMPOLA_ADRENALINE.get());
+
+                        output.accept(ModItems.AGULHA_VAZIA.get());
+
+                        output.accept(ModItems.AMPOLA_VAZIA.get());
+
+                        output.accept(ModItems.AMPOLA_ADRENALINE.get());
+
+                        output.accept(ModItems.REMEDIOS.get());
+
+                        output.accept(ModItems.Kit_Primeiros_Socorros.get());
+
+                        output.accept(ModItems.LORE_BOOK1.get());
+
+                    }).title(Component.translatable("creativetab.msmp_tab_resource")).build());
 
 
     public static void register(IEventBus eventBus){

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:kitprimeiros",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:cantil",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:sucata",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 5 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:pregos",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}

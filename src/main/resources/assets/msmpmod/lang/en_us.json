@@ -15,39 +15,57 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
+  "block.msmpmod.vhs_player": "VHS Tape Player",
+
+  "block.msmpmod.arthemis_plushie": "Arthemis Plush",
+
+  "block.msmpmod.astro_plushie": "Astro Plush",
+
+  "block.msmpmod.ekko_plushie": "Ekko Plush",
+
+  "block.msmpmod.suzzy_plushie": "Suzzy Plush",
+
+  "_comment": "Food's",
+
+  "item.msmpmod.frasco": "Petal Bottle",
+
+  "item.msmpmod.fungo_vinho": "Wine Fungus",
+
+  "item.msmpmod.comida_conserva1": "Canned Beans",
+
+  "item.msmpmod.comida_conserva2": "Canned Sardines",
+
+  "item.msmpmod.comida_conserva3": "Canned Spam",
+
+  "item.msmpmod.refri1" : "Cola Soda",
+
+  "item.msmpmod.refri2" : "Orange Soda",
+
+  "item.msmpmod.refri3" : "Purple Soda",
+
+  "item.msmpmod.cerveja1" : "Black Beer",
+
+  "item.msmpmod.cerveja2" : "Beer",
+
+  "item.msmpmod.whisky" : "Whiskey Bottle",
+
+  "item.msmpmod.garrafa_agua" : "Water Bottle",
+
+  "item.msmpmod.garrafa_agua_vazia" : "Empty Bottle",
+
+  "item.msmpmod.cantil_vazio" : "Empyt Canteen",
+
+  "item.msmpmod.cantil_sujo" : "Canteen",
+
+  "item.msmpmod.cantil_limpo" : "Canteen",
+
   "_comment": "Spawner's",
 
   "item.msmpmod.clicker_spawn_egg":"Clicker Spawn Egg",
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "_comment": "Player Items",
-
-  "item.msmpmod.necklace_heart_frizt": "§cHeart Necklace",
-
-  "item.msmpmod.necklace_heart_frizt.tooltip": "§7§oby Frizt",
-
-  "item.msmpmod.hair_bow_minayas": "§cHair Bow",
-
-  "item.msmpmod.hair_bow_minayas.tooltip": "§7§oby Minayas",
-
-  "item.msmpmod.necklace_moon_ross": "§cMoon Necklace",
-
-  "item.msmpmod.necklace_moon_ross.tooltip": "§7§oby Ross",
-
-  "item.msmpmod.r_l_polaroid": "§cPolaroid Brothers",
-
-  "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
-
-  "item.msmpmod.camera_raviel": "§cCamera",
-
-  "item.msmpmod.camera_raviel.tooltip": "§7§oby Raviel",
-
-  "item.msmpmod.foice_first": "Rusty Scythe",
-
-  "item.msmpmod.mask_luka": "§cKitsune Mask",
-
-  "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
+  "entity.msmpmod.mobfinal": "The Emaranhado",
 
   "_comment": "Sword's",
 
@@ -63,9 +81,59 @@
 
   "item.msmpmod.foice_canibal": "Cannibal's Scythe",
 
+  "item.msmpmod.molotov": "Molotov Cocktail",
+
+  "item.msmpmod.granada": "Fragmentation Grenade",
+
+  "item.msmpmod.smoke": "Smoke Grenade",
+
   "_comment": "Effects",
 
   "effect.msmpmod.bleeding": "Bleeding",
+
+  "_comment": "Resource",
+
+  "item.msmpmod.pregos" : "Box of Nails",
+
+  "item.msmpmod.tabuas" : "Planks",
+
+  "item.msmpmod.vidro_estilhacado" : "Broken Glass",
+
+  "item.msmpmod.trapos": "Rags",
+
+  "item.msmpmod.remedios" : "Medications",
+
+  "item.msmpmod.sucatas" : "Scrap",
+
+  "item.msmpmod.pilhas" : "Cells",
+
+  "item.msmpmod.bateria" : "Battery",
+
+  "item.msmpmod.fio_de_cobre" : "Copper Wire",
+
+  "item.msmpmod.lamina" : "Razor Blade",
+
+  "item.msmpmod.arame_farpado" : "Barbed Wire Roll",
+
+  "item.msmpmod.kit_primeiros_socorros" : "First Aid Kit",
+
+  "item.msmpmod.agulha_ampola_adrenaline" : "Adrenaline Injection",
+
+  "item.msmpmod.ampola_vazia" : "Empty Ampoule",
+
+  "item.msmpmod.agulha_vazia" : "Empty Injection",
+
+  "item.msmpmod.ampola_adrenaline" : "Adrenaline Ampoule",
+
+  "item.msmpmod.tesoura_quebrada" : "Broken Scissors",
+
+  "item.msmpmod.garrafa_vidro" : "Glass Bottle",
+
+  "item.msmpmod.fita" : "Adhesive Tape",
+
+  "_comment": "VHS's",
+
+  "item.msmpmod.vhs_music_1" : "Creep - Radiohead",
 
   "_comment": "Sign's",
 
@@ -99,5 +167,11 @@
 
   "creativetab.msmp_tab": "MSMP",
 
-  "creativetab.msmp_tab_weapons": "MSMP WEAPONS"
+  "creativetab.msmp_tab_vhs": "MSMP VHS",
+
+  "creativetab.msmp_tab_weapons": "MSMP WEAPONS",
+
+  "creativetab.msmp_tab_resource": "MSMP RESOURCES",
+
+  "creativetab.msmp_tab_foods": "MSMP FOOD'S"
 }

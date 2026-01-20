@@ -15,37 +15,53 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
 
+  "block.msmpmod.vhs_player": "Tocador de Fita VHS",
+
+  "block.msmpmod.arthemis_plushie": "Pelúcia da Arthemis",
+
+  "block.msmpmod.astro_plushie": "Pelúcia do Astro",
+
+  "block.msmpmod.ekko_plushie": "Pelúcia do Ekko",
+
+  "block.msmpmod.suzzy_plushie": "Pelúcia da Suzzy",
+
+  "_comment": "Food's",
+
+  "item.msmpmod.frasco": "Frasco de Pétalas",
+
+  "item.msmpmod.fungo_vinho": "Fungo Vinho",
+
+  "item.msmpmod.comida_conserva1": "Feijão Conservado",
+
+  "item.msmpmod.comida_conserva2": "Sardinha Conservada",
+
+  "item.msmpmod.comida_conserva3": "Carnde de Porco Conservado",
+
+  "item.msmpmod.refri1" : "Refrigerante Cola",
+
+  "item.msmpmod.refri2" : "Refrigerante Laranja",
+
+  "item.msmpmod.refri3" : "Refrigerante Roxo",
+
+  "item.msmpmod.cerveja1" : "Cerveja Preta",
+
+  "item.msmpmod.cerveja2" : "Cerveja",
+
+  "item.msmpmod.whisky" : "Garrafa de Whisky",
+
+  "item.msmpmod.cantil_vazio" : "Cantil Vazio",
+
+  "item.msmpmod.cantil_sujo" : "Cantil",
+
+  "item.msmpmod.cantil_limpo" : "Cantil",
+
   "_comment": "Spawner's",
 
   "item.msmpmod.clicker_spawn_egg":"Clicker Spawn Egg",
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "_comment": "Item's Player's",
-
-  "item.msmpmod.necklace_heart_frizt": "§cColar de Coração",
-
-  "item.msmpmod.necklace_heart_frizt.tooltip": "§7§oby Frizt",
-
-  "item.msmpmod.hair_bow_minayas": "§cLaço de Cabelo",
-
-  "item.msmpmod.hair_bow_minayas.tooltip": "§7§oby Minayas",
-
-  "item.msmpmod.necklace_moon_ross": "§cColar de Lua",
-
-  "item.msmpmod.necklace_moon_ross.tooltip": "§7§oby Ross",
-
-  "item.msmpmod.r_l_polaroid": "§cPolaroid Irmãos",
-
-  "item.msmpmod.r_l_polaroid.tooltip": "§7§oby Levi, Ravi & Davi",
-
-  "item.msmpmod.camera_raviel": "§cCamera",
-
-  "item.msmpmod.camera_raviel.tooltip": "§7§oby Raviel",
-
-  "item.msmpmod.mask_luka": "§cMáscara de Kitsune",
-
-  "item.msmpmod.mask_luka.tooltip": "§7§oby Luka",
+  "entity.msmpmod.mobfinal": "O Emaranhado",
 
   "_comment": "Armas",
 
@@ -61,9 +77,63 @@
 
   "item.msmpmod.foice_canibal": "Foice do Canibal",
 
+  "item.msmpmod.molotov": "Coquetel Molotov",
+
+  "item.msmpmod.granada": "Granada de Fragmentação",
+
+  "item.msmpmod.smoke": "Granada de Fumaça",
+
   "_comment": "Efeitos",
 
   "effect.msmpmod.bleeding": "Sangramento",
+
+  "_comment": "Recursos",
+
+  "item.msmpmod.pregos" : "Caixa de Pregos",
+
+  "item.msmpmod.tabuas" : "Tábuas",
+
+  "item.msmpmod.trapos" : "Trapos",
+
+  "item.msmpmod.remedios" : "Remédios",
+
+  "item.msmpmod.sucatas" : "Sucatas",
+
+  "item.msmpmod.pilhas" : "Pilhas",
+
+  "item.msmpmod.bateria" : "Bateria",
+
+  "item.msmpmod.fio_de_cobre" : "Fio de Cobre",
+
+  "item.msmpmod.lamina" : "Lâmina de Barbear",
+
+  "item.msmpmod.arame_farpado" : "Rolo de Arame Farpado",
+
+  "item.msmpmod.garrafa_agua" : "Garrafa de Água",
+
+  "item.msmpmod.garrafa_agua_vazia" : "Garrafa Vazia",
+
+  "item.msmpmod.kit_primeiros_socorros" : "Kit de Primeiros Socorros",
+
+  "item.msmpmod.agulha_ampola_adrenaline" : "Injeção de Adrenalina",
+
+  "item.msmpmod.agulha_vazia" : "Injeção Vazia",
+
+  "item.msmpmod.ampola_vazia" : "Ampola Vazia",
+
+  "item.msmpmod.ampola_adrenaline" : "Ampola de Adrenalina",
+
+  "item.msmpmod.vidro_estilhacado" : "Vidros Estilhaçados",
+
+  "item.msmpmod.tesoura_quebrada" : "Tesoura Quebrada",
+
+  "item.msmpmod.garrafa_vidro" : "Garrafa de Vidro",
+
+  "item.msmpmod.fita" : "Fita Adesiva",
+
+  "_comment": "VHS's",
+
+  "item.msmpmod.vhs_music_1" : "Creep - Radiohead",
 
   "_comment": "Placas",
 
@@ -97,5 +167,11 @@
 
   "creativetab.msmp_tab": "MSMP",
 
-  "creativetab.msmp_tab_weapons": "MSMP ARMAS"
+  "creativetab.msmp_tab_vhs": "MSMP VHS",
+
+  "creativetab.msmp_tab_weapons": "MSMP ARMAS",
+
+  "creativetab.msmp_tab_resource": "MSMP RECURSOS",
+
+  "creativetab.msmp_tab_foods": "MSMP COMIDAS"
 }

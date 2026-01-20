@@ -1,12 +1,12 @@
 package net.msmp.mod.block.entity;
 
-import io.netty.util.Attribute;
-import net.minecraft.world.level.block.entity.BlockEntity;
+
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.msmp.mod.block.entity.custom.PlushieBlockEntity;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
 
@@ -32,6 +32,24 @@ public class ModBlockEntities {
                             ModBlocks.MUSH_SIGN_GHOST.get(), ModBlocks.MUSH_WALL_SIGN_GHOST.get()
                     ).build(null)
             );
+
+    public static final RegistryObject<BlockEntityType<PlushieBlockEntity>> PLUSHIE_BE =
+            BLOCK_ENTITIES.register("plushie_be", () ->
+                    BlockEntityType.Builder.of(
+                            PlushieBlockEntity::new,
+                            ModBlocks.ASTRO_PLUSHIE.get(),
+                            ModBlocks.EKKO_PLUSHIE.get(),
+                            ModBlocks.ARTHEMIS_PLUSHIE.get(),
+                            ModBlocks.SUZZY_PLUSHIE.get()
+                    ).build(null));
+
+
+    public static final RegistryObject<BlockEntityType<VHSPlayerBlockEntity>> VHS_PLAYER_BE =
+            BLOCK_ENTITIES.register("vhs_player_be", () ->
+                    BlockEntityType.Builder.of(
+                            VHSPlayerBlockEntity::new,
+                            ModBlocks.VHS_PLAYER.get()
+                    ).build(null));
 
 
     public static void register(IEventBus eventBus) {BLOCK_ENTITIES.register(eventBus);}

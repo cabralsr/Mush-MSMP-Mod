@@ -18,12 +18,7 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-
-        // Adiciona os "provedores" de dados que você quer usar
-        // Provedor de Modelos de Blocos
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
-        // Provedor de Modelos de Itens (que estávamos tentando usar)
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
-        // Você pode adicionar outros aqui no futuro (receitas, tags, etc.)
     }
 }
