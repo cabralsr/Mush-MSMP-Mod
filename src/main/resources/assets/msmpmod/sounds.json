@@ -1,9 +1,0 @@
-{
-  "music_vhs_creep": {
-    "category": "record",
-    "subtitle": "subtitles.msmpmod.vhs_creep_radiohead",
-    "sounds": [
-      "msmpmod:music/vhs_creep_radiohead"
-    ]
-  }
-}

@@ -43,14 +43,7 @@ public class ModBlockEntities {
                             ModBlocks.SUZZY_PLUSHIE.get()
                     ).build(null));
 
-
-    public static final RegistryObject<BlockEntityType<VHSPlayerBlockEntity>> VHS_PLAYER_BE =
-            BLOCK_ENTITIES.register("vhs_player_be", () ->
-                    BlockEntityType.Builder.of(
-                            VHSPlayerBlockEntity::new,
-                            ModBlocks.VHS_PLAYER.get()
-                    ).build(null));
-
+    
 
     public static void register(IEventBus eventBus) {BLOCK_ENTITIES.register(eventBus);}
 }

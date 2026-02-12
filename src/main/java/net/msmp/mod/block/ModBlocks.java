@@ -63,9 +63,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> MUSH_SLEEPING_GRASS_BLOCK = registerBlock("mush_sleeping_grass_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.GRASS).strength(-1.0F)));
 
-    public static final RegistryObject<Block> VHS_PLAYER = registerBlock("vhs_player",
-            () -> new VHSPlayerBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-
     //PLACAS
     public static final RegistryObject<Block> MUSH_SIGN_MNPC01 = BLOCKS.register("mush_sign_mnpc01",
             () -> new ModStandingSingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).strength(0.15f)

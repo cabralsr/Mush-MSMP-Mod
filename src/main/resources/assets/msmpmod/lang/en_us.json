@@ -15,8 +15,6 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
-  "block.msmpmod.vhs_player": "VHS Tape Player",
-
   "block.msmpmod.arthemis_plushie": "Arthemis Plush",
 
   "block.msmpmod.astro_plushie": "Astro Plush",
@@ -24,6 +22,12 @@
   "block.msmpmod.ekko_plushie": "Ekko Plush",
 
   "block.msmpmod.suzzy_plushie": "Suzzy Plush",
+
+  "_comment": "Armor",
+
+  "item.msmpmod.gas_mask": "Gas Mask",
+
+  "item.msmpmod.gas_mask_filter": "Mask Filter",
 
   "_comment": "Food's",
 
@@ -130,10 +134,6 @@
   "item.msmpmod.garrafa_vidro" : "Glass Bottle",
 
   "item.msmpmod.fita" : "Adhesive Tape",
-
-  "_comment": "VHS's",
-
-  "item.msmpmod.vhs_music_1" : "Creep - Radiohead",
 
   "_comment": "Sign's",
 

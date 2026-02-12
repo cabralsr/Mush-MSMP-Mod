@@ -10,6 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
 import net.msmp.mod.entity.ModEntityTypes;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -104,19 +106,9 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.GAS_MASK.get());
 
+                        output.accept(ModItems.GAS_MASK_FILTER.get());
+
                     }).title(Component.translatable("creativetab.msmp_tab_weapons")).build());
-
-    public static final RegistryObject<CreativeModeTab> MSMP_TAB_VHS = CREATIVE_MODE_TABS.register("msmp_tab_vhs",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.VHS_MUSIC_1.get()))
-                    .displayItems((itemDisplayParameters, output) -> {
-
-                        //TOCA VHS
-                        output.accept(ModBlocks.VHS_PLAYER.get());
-
-                        //VHS
-                        output.accept(ModItems.VHS_MUSIC_1.get());
-
-                    }).title(Component.translatable("creativetab.msmp_tab_vhs")).build());
 
     public static final RegistryObject<CreativeModeTab> MSMP_TAB_FOODS = CREATIVE_MODE_TABS.register("msmp_tab_foods",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.REFRI1.get()))
@@ -193,6 +185,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.LORE_BOOK1.get());
 
                     }).title(Component.translatable("creativetab.msmp_tab_resource")).build());
+    private static final Logger log = LoggerFactory.getLogger(ModCreativeModTabs.class);
 
 
     public static void register(IEventBus eventBus){

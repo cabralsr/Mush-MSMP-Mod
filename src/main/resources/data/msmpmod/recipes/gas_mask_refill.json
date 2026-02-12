@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "msmpmod:gas_mask"
+    },
+    {
+      "item": "msmpmod:gas_mask_filter"
+    }
+  ],
+  "result": {
+    "item": "msmpmod:gas_mask"
+  }
+}

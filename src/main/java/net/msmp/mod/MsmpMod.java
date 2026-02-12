@@ -42,8 +42,6 @@ public class MsmpMod {
 
         ModEffects.register(modEventBus);
 
-        net.msmp.mod.sound.ModSound.register(modEventBus);
-
         ModBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);

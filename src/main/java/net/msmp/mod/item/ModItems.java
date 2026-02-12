@@ -37,12 +37,6 @@ public class ModItems {
     public static final RegistryObject<Item> SUZZY_PLUSHIE = ITEMS.register("suzzy_plushie",
             () -> new PlushieItem(ModBlocks.SUZZY_PLUSHIE.get(), new Item.Properties()));
 
-    //FITAS VHS
-
-    public static final RegistryObject<Item> VHS_MUSIC_1 = ITEMS.register("vhs_music_1",
-            () -> new VHSTapeItem(new Item.Properties().stacksTo(1), "music_vhs_creep"));
-
-
     public static final RegistryObject<Item> GAS_MASK = ITEMS.register("gas_mask",
             () -> new GasMaskItem(
                     ArmorMaterials.IRON,
@@ -50,6 +44,8 @@ public class ModItems {
                     new Item.Properties()
             ));
 
+    public static final RegistryObject<Item> GAS_MASK_FILTER = ITEMS.register("gas_mask_filter",
+            () -> new Item(new Item.Properties()));
 
     //COMIDAS
 
