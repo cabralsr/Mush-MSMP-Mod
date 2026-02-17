@@ -1,0 +1,14 @@
+{
+  "clicker_ambient": {
+    "category": "hostile",
+    "sounds": [
+      "msmpmod:clicker/ambient1"
+    ]
+  },
+  "rastejador_ambient": {
+    "category": "hostile",
+    "sounds": [
+      "msmpmod:rastejador/ambient1"
+    ]
+  }
+}

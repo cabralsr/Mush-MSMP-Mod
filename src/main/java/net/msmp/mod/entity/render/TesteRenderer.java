@@ -8,6 +8,6 @@ import software.bernie.geckolib.renderer.GeoEntityRenderer;
 public class TesteRenderer extends GeoEntityRenderer<TestEntity> {
     public TesteRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new TestModel());
-        this.shadowRadius = 0.5f; // Define o tamanho da sombra
+        this.shadowRadius = 0.5f;
     }
 }

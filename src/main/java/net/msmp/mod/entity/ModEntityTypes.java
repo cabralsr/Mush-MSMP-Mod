@@ -1,6 +1,5 @@
 package net.msmp.mod.entity;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.entity.custom.*;
-import net.msmp.mod.entity.custom.BombaDePregosEntity;
+import net.msmp.mod.entity.projectile.BombaDePregosEntity;
 import net.msmp.mod.entity.projectile.GranadaEntity;
 import net.msmp.mod.entity.projectile.MolotovEntity;
 import net.msmp.mod.entity.projectile.PregoEntity;
@@ -24,17 +23,11 @@ public class ModEntityTypes {
                             .sized(0.8f, 1.5f)
                             .build("clicker"));
 
-    public static final RegistryObject<EntityType<KairosEntity>> KAIROS_MOB =
-            ENTITY_TYPES.register("kairos",
-                    () -> EntityType.Builder.of(KairosEntity::new, MobCategory.MONSTER)
-                            .sized(0.8f, 1.5f) 
-                            .build("kairos"));
-
-    public static final RegistryObject<EntityType<mobEntity>> MOBFINAL_MOB =
-            ENTITY_TYPES.register("mobfinal",
-                    () -> EntityType.Builder.of(mobEntity::new, MobCategory.MONSTER)
+    public static final RegistryObject<EntityType<RastejadorEntity>> RASTEJADOR_MOB =
+            ENTITY_TYPES.register("rastejador",
+                    () -> EntityType.Builder.of(RastejadorEntity::new, MobCategory.MONSTER)
                             .sized(0.8f, 1.5f)
-                            .build("mobfinal"));
+                            .build("rastejador"));
 
     public static final RegistryObject<EntityType<MolotovEntity>> MOLOTOV_PROJECTILE =
             ENTITY_TYPES.register("molotov_projectile",

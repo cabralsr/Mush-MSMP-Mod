@@ -1,4 +1,4 @@
-package net.msmp.mod.item.custom;
+package net.msmp.mod.item;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.msmp.mod.entity.custom.BombaDePregosEntity;
+import net.msmp.mod.entity.projectile.BombaDePregosEntity;
 
 public class BombaDePregoItem extends Item {
     public BombaDePregoItem(Properties pProperties) {

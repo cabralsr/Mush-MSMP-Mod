@@ -19,7 +19,6 @@ import net.msmp.mod.entity.ModEntityTypes;
 import net.msmp.mod.item.ModCreativeModTabs;
 import net.msmp.mod.item.ModItems;
 import net.msmp.mod.loot.ModLootModifiers;
-import net.msmp.mod.util.ModSounds;
 import net.msmp.mod.util.ModWoodTypes;
 import org.slf4j.Logger;
 
@@ -48,6 +47,8 @@ public class MsmpMod {
 
         ModLootModifiers.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         ModEntityTypes.register(modEventBus);
@@ -60,7 +61,7 @@ public class MsmpMod {
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        net.msmp.mod.networking.ModMessages.register();
+        net.msmp.mod.network.ModMessages.register();
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)

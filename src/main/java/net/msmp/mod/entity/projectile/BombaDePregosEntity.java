@@ -1,4 +1,4 @@
-package net.msmp.mod.entity.custom;
+package net.msmp.mod.entity.projectile;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.EntityType;
@@ -52,7 +52,7 @@ public class BombaDePregosEntity extends ThrowableItemProjectile {
         for (int i = 0; i < numberOfNails; i++) {
             PregoEntity nail = new PregoEntity(this.level(), this.getX(), this.getY() + 0.5, this.getZ());
 
-            nail.setBaseDamage(3.0);
+            nail.setBaseDamage(7.0);
             nail.pickup = AbstractArrow.Pickup.DISALLOWED;
 
             double angle = (2 * Math.PI / numberOfNails) * i;

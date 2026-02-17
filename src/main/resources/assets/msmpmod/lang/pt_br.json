@@ -15,17 +15,23 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
 
-  "block.msmpmod.arthemis_plushie": "Pelúcia da Arthemis",
-
-  "block.msmpmod.astro_plushie": "Pelúcia do Astro",
-
-  "block.msmpmod.ekko_plushie": "Pelúcia do Ekko",
-
-  "block.msmpmod.suzzy_plushie": "Pelúcia da Suzzy",
-
   "_comment": "Armor",
 
   "item.msmpmod.gas_mask": "Máscara de Gás",
+
+  "item.msmpmod.gas_mask_up": "Máscara de Gás +1",
+
+  "item.msmpmod.gas_mask_up1": "Máscara de Gás +2",
+
+  "item.msmpmod.gas_mask_up2": "Máscara de Gás +3",
+
+  "item.msmpmod.gas_mask_one": "Máscara de Gás",
+
+  "item.msmpmod.gas_mask_one_up": "Máscara de Gás +1",
+
+  "item.msmpmod.gas_mask_one_up1": "Máscara de Gás +2",
+
+  "item.msmpmod.gas_mask_one_up2": "Máscara de Gás +3",
 
   "item.msmpmod.gas_mask_filter": "Filtro de Máscara",
 
@@ -65,7 +71,10 @@
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "entity.msmpmod.mobfinal": "O Emaranhado",
+  "item.msmpmod.rastejador_spawn_egg":"Rastejador Spawn Egg",
+
+  "entity.msmpmod.rastejador": "Rastejador",
+
 
   "_comment": "Armas",
 
@@ -85,7 +94,7 @@
 
   "item.msmpmod.granada": "Granada de Fragmentação",
 
-  "item.msmpmod.smoke": "Granada de Fumaça",
+  "item.msmpmod.bomba_de_prego": "Bomba de Prego",
 
   "_comment": "Efeitos",
 

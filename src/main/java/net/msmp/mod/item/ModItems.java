@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
 import net.msmp.mod.entity.ModEntityTypes;
-import net.msmp.mod.item.custom.BombaDePregoItem;
+import net.msmp.mod.item.BombaDePregoItem;
 import net.msmp.mod.item.food.GarrafaAguaItem;
 import net.msmp.mod.item.food.*;
 import net.msmp.mod.item.medicine.AgulhaAdrenalineItem;
@@ -25,21 +25,58 @@ public class ModItems {
     public static final DeferredRegister<Item>ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MsmpMod.MOD_ID);
 
-    public static final RegistryObject<Item> EKKO_PLUSHIE = ITEMS.register("ekko_plushie",
-            () -> new PlushieItem(ModBlocks.EKKO_PLUSHIE.get(), new Item.Properties()));
-
-    public static final RegistryObject<Item> ASTRO_PLUSHIE = ITEMS.register("astro_plushie",
-            () -> new PlushieItem(ModBlocks.ASTRO_PLUSHIE.get(), new Item.Properties()));
-
-    public static final RegistryObject<Item> ARTHEMIS_PLUSHIE = ITEMS.register("arthemis_plushie",
-            () -> new PlushieItem(ModBlocks.ARTHEMIS_PLUSHIE.get(), new Item.Properties()));
-
-    public static final RegistryObject<Item> SUZZY_PLUSHIE = ITEMS.register("suzzy_plushie",
-            () -> new PlushieItem(ModBlocks.SUZZY_PLUSHIE.get(), new Item.Properties()));
-
     public static final RegistryObject<Item> GAS_MASK = ITEMS.register("gas_mask",
             () -> new GasMaskItem(
+                    ArmorMaterials.LEATHER,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_UP = ITEMS.register("gas_mask_up",
+            () -> new GasMaskItem(
                     ArmorMaterials.IRON,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_UP1 = ITEMS.register("gas_mask_up1",
+            () -> new GasMaskItem(
+                    ArmorMaterials.DIAMOND,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_UP2 = ITEMS.register("gas_mask_up2",
+            () -> new GasMaskItem(
+                    ArmorMaterials.NETHERITE,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_ONE = ITEMS.register("gas_mask_one",
+            () -> new GasMaskOneItem(
+                    ArmorMaterials.LEATHER,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_ONE_UP = ITEMS.register("gas_mask_one_up",
+            () -> new GasMaskOneItem(
+                    ArmorMaterials.IRON,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_ONE_UP1 = ITEMS.register("gas_mask_one_up1",
+            () -> new GasMaskOneItem(
+                    ArmorMaterials.DIAMOND,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+            ));
+
+    public static final RegistryObject<Item> GAS_MASK_ONE_UP2 = ITEMS.register("gas_mask_one_up2",
+            () -> new GasMaskOneItem(
+                    ArmorMaterials.NETHERITE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()
             ));
@@ -301,6 +338,13 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(
                     ModEntityTypes.SEU_MOB,
                     0xFFFFFF,
+                    0xA9A9A9,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> RASTEJADOR_SPAWN_EGG = ITEMS.register("rastejador_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    ModEntityTypes.RASTEJADOR_MOB,
+                    0x800080,
                     0xA9A9A9,
                     new Item.Properties()));
 

@@ -14,7 +14,7 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.msmp.mod.item.ModItems;
-import net.msmp.mod.networking.ModMessages; // Importante: Sua rede
+import net.msmp.mod.network.ModMessages; // Importante: Sua rede
 import net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket; // Importante: Seu pacote
 import net.msmp.mod.thirst.PlayerThirstProvider; // Importante: Sua capability
 

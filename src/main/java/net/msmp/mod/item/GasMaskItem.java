@@ -7,6 +7,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -23,6 +26,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Consumer;
 
 public class GasMaskItem extends ArmorItem implements GeoItem {
@@ -69,8 +73,9 @@ public class GasMaskItem extends ArmorItem implements GeoItem {
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (!level.isClientSide() && entity instanceof Player player) {
 
-            ItemStack headStack = player.getItemBySlot(EquipmentSlot.HEAD);
-            if (headStack.getItem() == this) {
+            ItemStack equippedHead = player.getItemBySlot(EquipmentSlot.HEAD);
+
+            if (stack == equippedHead) {
 
 
                 if (stack.getDamageValue() < stack.getMaxDamage() - 1) {
@@ -108,7 +113,6 @@ public class GasMaskItem extends ArmorItem implements GeoItem {
         return super.damageItem(stack, amount, entity, onBroken);
     }
 
-    // Adiciona dica no item
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
         if (stack.getDamageValue() >= stack.getMaxDamage() - 1) {
@@ -118,5 +122,16 @@ public class GasMaskItem extends ArmorItem implements GeoItem {
             tooltip.add(Component.literal("§aFiltro: " + porcentagem + "%"));
         }
         super.appendHoverText(stack, level, tooltip, flag);
+    }
+
+    @Override
+    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+        Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(book);
+
+        if (enchantments.containsKey(Enchantments.MENDING) || enchantments.containsKey(Enchantments.UNBREAKING)) {
+            return false;
+        }
+
+        return super.isBookEnchantable(stack, book);
     }
 }

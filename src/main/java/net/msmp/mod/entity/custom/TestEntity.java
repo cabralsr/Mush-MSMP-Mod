@@ -1,6 +1,14 @@
 package net.msmp.mod.entity.custom;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.protocol.game.ClientboundStopSoundPacket;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -10,9 +18,12 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import net.msmp.mod.effects.ModEffects;
+import net.msmp.mod.ModSounds;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
@@ -22,10 +33,10 @@ import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class TestEntity extends PathfinderMob implements GeoEntity {
+public class TestEntity extends Monster implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-    public TestEntity(EntityType<? extends PathfinderMob> type, Level level) {
+    public TestEntity(EntityType<? extends Monster> type, Level level) {
         super(type, level);
     }
 
@@ -51,11 +62,11 @@ public class TestEntity extends PathfinderMob implements GeoEntity {
 
     public static AttributeSupplier.Builder createAttributes() {
         return PathfinderMob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 250.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.5D)
-                .add(Attributes.ATTACK_DAMAGE, 20.0D)
+                .add(Attributes.MAX_HEALTH, 50.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.ARMOR, 7D)
-                .add(Attributes.ATTACK_SPEED, 2D)
+                .add(Attributes.ATTACK_SPEED, 1.5D)
                 .add(Attributes.FOLLOW_RANGE, 32.0D);
     }
 
@@ -85,6 +96,7 @@ public class TestEntity extends PathfinderMob implements GeoEntity {
         if (attackSuccessful && target instanceof LivingEntity) {
             if (!this.level().isClientSide()) {
                 LivingEntity livingTarget = (LivingEntity) target;
+
                 livingTarget.addEffect(new MobEffectInstance(
                         ModEffects.BLEEDING.get(),
                         100,
@@ -93,10 +105,48 @@ public class TestEntity extends PathfinderMob implements GeoEntity {
                         false,
                         false
                 ));
+
+                livingTarget.addEffect(new MobEffectInstance(
+                        MobEffects.POISON,
+                        100,
+                        0,
+                        false,
+                        true,
+                        true
+                ));
             }
         }
 
         return attackSuccessful;
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.CLICKER_AMBIENT.get();
+    }
+
+    @Override
+    public void die(DamageSource cause) {
+        super.die(cause);
+
+        if (!this.level().isClientSide()) {
+
+            net.minecraft.resources.ResourceLocation soundId = net.msmp.mod.ModSounds.CLICKER_AMBIENT.getId();
+
+            for (net.minecraft.world.entity.player.Player player : this.level().players()) {
+
+                if (player instanceof ServerPlayer serverPlayer && player.distanceToSqr(this) < 1024.0D) {
+
+                    serverPlayer.connection.send(new ClientboundStopSoundPacket(soundId, SoundSource.HOSTILE));
+                }
+            }
+        }
+    }
+
+
+    @Override
+    protected void playStepSound(BlockPos pos, BlockState blockIn) {
+        this.playSound(SoundEvents.ZOMBIE_STEP, 0.15F, 1.0F);
     }
 
     @Override

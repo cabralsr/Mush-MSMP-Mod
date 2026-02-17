@@ -35,14 +35,6 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.MUSH_SLEEPING_GRASS_BLOCK.get());
 
-                        output.accept(ModItems.EKKO_PLUSHIE.get());
-
-                        output.accept(ModItems.ASTRO_PLUSHIE.get());
-
-                        output.accept(ModItems.ARTHEMIS_PLUSHIE.get());
-
-                        output.accept(ModItems.SUZZY_PLUSHIE.get());
-
                         // PLACAS
 
                         output.accept(ModItems.MUSH_SIGN_MNPC01.get());
@@ -78,6 +70,8 @@ public class ModCreativeModTabs {
                         // Spawner's
 
                         output.accept(ModItems.CLICKER_SPAWN_EGG.get());
+
+                        output.accept(ModItems.RASTEJADOR_SPAWN_EGG.get());
                     })
                     .title(Component.translatable("creativetab.msmp_tab"))
                     .build());
@@ -105,6 +99,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BOMBA_DE_PREGO.get());
 
                         output.accept(ModItems.GAS_MASK.get());
+
+                        output.accept(ModItems.GAS_MASK_ONE.get());
 
                         output.accept(ModItems.GAS_MASK_FILTER.get());
 

@@ -15,7 +15,6 @@ public class InvisiblePregoRenderer extends ArrowRenderer<PregoEntity> {
         return null;
     }
 
-    // SOBRESCREVEMOS O RENDER PARA NÃO DESENHAR NADA
     @Override
     public void render(PregoEntity pEntity, float pEntityYaw, float pPartialTicks, com.mojang.blaze3d.vertex.PoseStack pMatrixStack, net.minecraft.client.renderer.MultiBufferSource pBuffer, int pPackedLight) {
 

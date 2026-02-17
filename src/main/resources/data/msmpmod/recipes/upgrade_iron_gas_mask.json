@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    "SMS",
+    "ISI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "msmpmod:sucatas"
+    },
+    "M": {
+      "item": "msmpmod:gas_mask"
+    }
+  },
+  "result": {
+    "item": "msmpmod:gas_mask_up",
+    "count": 1
+  }
+}

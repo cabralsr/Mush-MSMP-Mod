@@ -15,17 +15,23 @@
 
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
-  "block.msmpmod.arthemis_plushie": "Arthemis Plush",
-
-  "block.msmpmod.astro_plushie": "Astro Plush",
-
-  "block.msmpmod.ekko_plushie": "Ekko Plush",
-
-  "block.msmpmod.suzzy_plushie": "Suzzy Plush",
-
   "_comment": "Armor",
 
   "item.msmpmod.gas_mask": "Gas Mask",
+
+  "item.msmpmod.gas_mask_up": "Gas Mask +1",
+
+  "item.msmpmod.gas_mask_up1": "Gas Mask +2",
+
+  "item.msmpmod.gas_mask_up2": "Gas Mask +3",
+
+  "item.msmpmod.gas_mask_one": "Gas Mask",
+
+  "item.msmpmod.gas_mask_one_up": "Gas Mask +1",
+
+  "item.msmpmod.gas_mask_one_up1": "Gas Mask +2",
+
+  "item.msmpmod.gas_mask_one_up2": "Gas Mask +3",
 
   "item.msmpmod.gas_mask_filter": "Mask Filter",
 
@@ -69,7 +75,9 @@
 
   "entity.msmpmod.clicker": "Clicker",
 
-  "entity.msmpmod.mobfinal": "The Emaranhado",
+  "item.msmpmod.rastejador_spawn_egg":"Crawler Spawn Egg",
+
+  "entity.msmpmod.rastejador": "Crawler",
 
   "_comment": "Sword's",
 
@@ -89,7 +97,7 @@
 
   "item.msmpmod.granada": "Fragmentation Grenade",
 
-  "item.msmpmod.smoke": "Smoke Grenade",
+  "item.msmpmod.bomba_de_prego": "Nail Bomb",
 
   "_comment": "Effects",
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DBD",
+    "BMB",
+    "DBD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "minecraft:diamond_block"
+    },
+    "M": {
+      "item": "msmpmod:gas_mask_up"
+    }
+  },
+  "result": {
+    "item": "msmpmod:gas_mask_up1",
+    "count": 1
+  }
+}

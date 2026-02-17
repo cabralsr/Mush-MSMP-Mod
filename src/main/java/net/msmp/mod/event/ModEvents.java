@@ -15,31 +15,22 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.msmp.mod.MsmpMod;
-import net.msmp.mod.entity.ModEntityTypes;
-import net.msmp.mod.entity.custom.TestEntity;
-import net.msmp.mod.entity.render.TesteRenderer;
 import net.msmp.mod.item.ModItems;
 import net.msmp.mod.thirst.PlayerThirstProvider;
 import net.msmp.mod.weather.RedRainManager;
@@ -48,13 +39,6 @@ import net.msmp.mod.weather.RedRainManager;
 @Mod.EventBusSubscriber(modid = MsmpMod.MOD_ID)
 
 public class ModEvents {
-    @SubscribeEvent
-    public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntityTypes.SEU_MOB.get(), TestEntity.createAttributes().build());
-        event.put(ModEntityTypes.KAIROS_MOB.get(), TestEntity.createAttributes().build());
-        event.put(ModEntityTypes.MOBFINAL_MOB.get(), TestEntity.createAttributes().build());
-    }
-
 
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -124,7 +108,7 @@ public class ModEvents {
     public static void onPlayerJoinWorld(PlayerEvent.PlayerLoggedInEvent event) {
         if(!event.getEntity().level().isClientSide()) {
             event.getEntity().getCapability(PlayerThirstProvider.PLAYER_THIRST).ifPresent(thirst -> {
-                net.msmp.mod.networking.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), (ServerPlayer) event.getEntity());
+                net.msmp.mod.network.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), (ServerPlayer) event.getEntity());
             });
         }
     }
@@ -142,7 +126,7 @@ public class ModEvents {
                     if(thirst.getThirst() > 0) {
                         thirst.subThirst(1);
 
-                        net.msmp.mod.networking.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), player);
+                        net.msmp.mod.network.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), player);
                     } else {
                         player.hurt(player.damageSources().starve(), 1.0f);
                     }
@@ -170,7 +154,6 @@ public class ModEvents {
                 return;
             }
         }
-        // -----------------------------------
 
         BlockPos pos = entity.blockPosition();
 

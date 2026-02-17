@@ -56,7 +56,7 @@ public class CantilItem extends Item {
                     thirst.addThirst(10);
                 }
 
-                net.msmp.mod.networking.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), serverPlayer);
+                net.msmp.mod.network.ModMessages.sendToPlayer(new net.msmp.mod.networking.packet.ThirstDataSyncS2CPacket(thirst.getThirst()), serverPlayer);
             });
 
             int danoAtual = stack.getDamageValue();

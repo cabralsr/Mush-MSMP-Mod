@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "IAI",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "item": "msmpmod:pregos"
+    },
+    "A": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "msmpmod:tabuas",
+    "count": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DBP",
+    "RSR",
+    "PBD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dandelion"
+    },
+    "P": {
+      "item": "minecraft:poppy"
+    },
+    "B": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "R": {
+      "item": "minecraft:red_mushroom"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "msmpmod:remedios",
+    "count": 4
+  }
+}
