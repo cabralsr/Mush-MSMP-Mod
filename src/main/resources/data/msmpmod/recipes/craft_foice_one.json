@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLS",
+    " AS",
+    " AS"
+  ],
+  "key": {
+    "L": {
+      "item": "msmpmod:lamina"
+    },
+    "S": {
+      "item": "msmpmod:sucatas"
+    },
+    "A": {
+      "item": "msmpmod:arame_farpado"
+    }
+  },
+  "result": {
+    "item": "msmpmod:foice_one",
+    "count": 1
+  }
+}

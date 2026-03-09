@@ -1,0 +1,216 @@
+{
+
+"block.msmpmod.mush.mushroom": "Mush",
+
+"_comment": "Blocks",
+
+  "block.msmpmod.mush_grass_block": "Mythirose rojo",
+
+  "block.msmpmod.mush_grassblue_block": "Mythirose azul",
+
+  "block.msmpmod.mush_grasspurple_block": "Mythirose morado",
+
+  "block.msmpmod.mush_muss_block": "Infect Muss",
+
+  "block.msmpmod.mush_sleeping_block": "Dormant Infection Muss",
+
+  "block.msmpmod.trader_block": "Máquina de intercambio",
+
+  "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
+
+"_comment": "Armor",
+
+  "item.msmpmod.gas_mask": "Máscara antigás",
+
+  "item.msmpmod.gas_mask_up": "Máscara antigás +1",
+
+  "item.msmpmod.gas_mask_up1": "Máscara antigás +2",
+
+  "item.msmpmod.gas_mask_up2": "Máscara antigás +3",
+
+  "item.msmpmod.gas_mask_one": "Máscara antigás",
+
+  "item.msmpmod.gas_mask_one_up": "Máscara antigás +1",
+
+  "item.msmpmod.gas_mask_one_up1": "Máscara antigás +2",
+
+  "item.msmpmod.gas_mask_one_up2": "Máscara antigás +3",
+
+  "item.msmpmod.gas_mask_filter": "Filtro para máscara",
+
+  "_comment": "Food's",
+
+  "item.msmpmod.frasco": "Botella Petal",
+
+  "item.msmpmod.fungo_vinho": "Hongo del vino",
+
+  "item.msmpmod.comida_conserva1": "Frijoles enlatados",
+
+  "item.msmpmod.comida_conserva2": "Sardinas en lata",
+
+  "item.msmpmod.comida_conserva3": "Spam en lata",
+
+  "item.msmpmod.refri1": "Refresco de cola",
+
+  "item.msmpmod.refri2" : "Refresco de naranja",
+
+  "item.msmpmod.refri3" : "Refresco morado",
+
+  "item.msmpmod.guaravita" : "Guaravita",
+
+  "item.msmpmod.cerveja1" : "Cerveza negra",
+
+  "item.msmpmod.cerveja2" : "Cerveza",
+
+  "item.msmpmod.whisky" : "Botella de whisky",
+
+  "item.msmpmod.garrafa_agua" : "Botella de agua",
+
+  "item.msmpmod.garrafa_agua_vazia" : "Botella vacía",
+
+  "item.msmpmod.cantil_vazio" : "Cantimplora vacía",
+
+  "item.msmpmod.cantil_sujo" : "Cantimplora",
+
+  "item.msmpmod.cantil_limpo" : "Cantimplora",
+
+  "_comment": "Spawner's",
+
+  "item.msmpmod.clicker_spawn_egg":"Huevo de engendro de clicker",
+
+  "entity.msmpmod.clicker": "Clicker",
+
+  "item.msmpmod.rastejador_spawn_egg":"Huevo de engendro rastreador",
+
+  "entity.msmpmod.rastejador": "Rastreador",
+
+  "item.msmpmod.dogzombie_spawn_egg":"Huevo de engendro de cadáver ciego",
+
+  "entity.msmpmod.dog_zombie": "Cadáver ciego",
+
+  "_comment": "Sword's",
+
+  "item.msmpmod.axe_guittar": "Guitarra Laminada",
+
+  "item.msmpmod.adaga_sangue": "Daga Sangrienta",
+
+  "item.msmpmod.adaga_enferrujada": "Daga oxidada",
+
+  "item.msmpmod.cutelo_keruv": "Cuchillo Keruv",
+
+  "item.msmpmod.gancho_keruv": "Gancho Keruv",
+
+  "item.msmpmod.knife_ghost": "Cuchillo GhostFace",
+
+  "item.msmpmod.sword_rephal": "Espada Rephal",
+
+  "item.msmpmod.sword_enferrujada": "Espada con Arrame",
+
+  "item.msmpmod.foice_first": "Guadaña Oxidada",
+
+  "item.msmpmod.foice_one": "Guadaña de Chatarra",
+
+  "item.msmpmod.lanca_vidro": "Lanza de Cristal Improvisada",
+
+  "item.msmpmod.foice_canibal": "Guadaña del Caníbal",
+
+  "item.msmpmod.great_sword_cedric": "Espada Cedric",
+
+  "item.msmpmod.molotov": "Cóctel Molotov",
+
+  "item.msmpmod.granada": "Granada de Fragmentación",
+
+  "item.msmpmod.bomba_de_prego": "Bomba de Clavos",
+
+  "_comment": "Effects",
+
+  "effect.msmpmod.bleeding": "Sangrado",
+
+  "_comment": "Resource",
+
+  "item.msmpmod.pregos": "Caja de clavos",
+
+  "item.msmpmod.tabuas": "Tablones",
+
+  "item.msmpmod.vidro_estilhacado": "Cristales rotos",
+
+  "item.msmpmod.trapos": "Trapos",
+
+  "item.msmpmod.remedios" : "Medicamentos",
+
+  "item.msmpmod.sucatas" : "Chatarra",
+
+  "item.msmpmod.pilhas" : "Pilas",
+
+  "item.msmpmod.bateria": "Batería",
+
+  "item.msmpmod.fio_de_cobre": "Alambre de cobre",
+
+  "item.msmpmod.lamina": "Cuchilla de afeitar",
+
+  "item.msmpmod.arame_farpado": "Rollos de alambre de púas",
+
+  "item.msmpmod.kit_primeiros_socorros": "Botiquín de primeros auxilios",
+
+  "item.msmpmod.agulha_ampola_adrenaline": "Inyección de adrenalina",
+
+  "item.msmpmod.ampola_vazia": "Ampolla vacía",
+
+  "item.msmpmod.agulha_vazia" : "Inyección vacía",
+
+  "item.msmpmod.ampola_adrenaline" : "Ampolla de adrenalina",
+
+  "item.msmpmod.tesoura_quebrada": "Tijeras rotas",
+
+  "item.msmpmod.garrafa_vidro": "Botella de vidrio",
+
+  "item.msmpmod.fita": "Cinta adhesiva",
+
+  "item.msmpmod.medalhao_cedric" : "Medallón de Cedric",
+
+  "_comment": "Sign's",
+
+  "block.msmpmod.mush_sign_mnpc01": "§bSign MNPC01",
+
+  "block.msmpmod.mush_sign_mnpc02": "§5Sign MNPC02",
+
+  "block.msmpmod.mush_sign_mnpc03": "§eSign MNPC03",
+
+  "block.msmpmod.mush_sign_mnpc04": "§2Sign MNPC04",
+
+  "block.msmpmod.mush_sign_mnpc05": "§3Sign MNPC05",
+
+  "block.msmpmod.mush_sign_mnpc06": "§3Sign MNPC06",
+
+  "block.msmpmod.mush_sign_mnpc07": "§6Sign MNPC07",
+
+  "block.msmpmod.mush_sign_mnpc08": "§aSign MNPC08",
+
+  "block.msmpmod.mush_sign_mnpc09": "§dSign MNPC09",
+
+  "block.msmpmod.mush_sign_mnpc10": "§3Sign MNPC10",
+
+  "block.msmpmod.mush_sign_mnpc11": "§fSign MNPC11",
+
+  "block.msmpmod.mush_sign_ghost": "§cSign GHOSTFACE",
+
+  "tooltip.msmpmod.signs": "§7§oDiseñado por @ponyozita",
+
+  "key.msmpmod.color_menu": "Menu Bubble Chat",
+
+  "_comment": "Keys",
+
+  "category.msmpmod.keys": "MSMP",
+
+  "_comment": "Tab Title",
+
+  "creativetab.msmp_tab": "MSMP",
+
+  "creativetab.msmp_tab_vhs": "MSMP VHS",
+
+  "creativetab.msmp_tab_weapons": "ARMAS MSMP",
+
+  "creativetab.msmp_tab_resource": "RECURSOS MSMP",
+
+  "creativetab.msmp_tab_foods": "ALIMENTOS MSMP"
+}

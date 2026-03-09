@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "PFP",
+    " S "
+  ],
+  "key": {
+    "V": {
+      "item": "msmpmod:vidro_estilhacado"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "F": {
+      "item": "msmpmod:fita"
+    },
+    "P": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "msmpmod:lanca_vidro",
+    "count": 1
+  }
+}

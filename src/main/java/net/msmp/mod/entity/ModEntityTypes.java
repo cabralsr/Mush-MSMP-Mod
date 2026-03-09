@@ -29,6 +29,12 @@ public class ModEntityTypes {
                             .sized(0.8f, 1.5f)
                             .build("rastejador"));
 
+    public static final RegistryObject<EntityType<DogZombieEntity>> DogZombie_MOB =
+            ENTITY_TYPES.register("dog_zombie",
+                    () -> EntityType.Builder.of(DogZombieEntity::new, MobCategory.MONSTER)
+                            .sized(1f, 2f)
+                            .build("dog_zombie"));
+
     public static final RegistryObject<EntityType<MolotovEntity>> MOLOTOV_PROJECTILE =
             ENTITY_TYPES.register("molotov_projectile",
                     () -> EntityType.Builder.<MolotovEntity>of(MolotovEntity::new, MobCategory.MISC)

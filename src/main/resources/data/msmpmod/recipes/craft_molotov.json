@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    " T ",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "msmpmod:whisky"
+    },
+    "T": {
+      "item": "msmpmod:trapos"
+    }
+  },
+  "result": {
+    "item": "msmpmod:molotov",
+    "count": 1
+  }
+}

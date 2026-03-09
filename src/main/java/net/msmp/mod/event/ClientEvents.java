@@ -6,6 +6,8 @@ import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.msmp.mod.MsmpMod;
+import net.msmp.mod.block.client.TraderBlockRenderer;
+import net.msmp.mod.block.entity.ModBlockEntities;
 import net.msmp.mod.client.renderer.InvisiblePregoRenderer;
 import net.msmp.mod.entity.ModEntityTypes;
 import net.msmp.mod.entity.render.*;
@@ -18,10 +20,12 @@ public class ClientEvents {
     public static void registerEntityRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.SEU_MOB.get(), TesteRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.RASTEJADOR_MOB.get(), RastejadorRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.DogZombie_MOB.get(), DogZombieRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.MOLOTOV_PROJECTILE.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.GRANADA_PROJECTILE.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.BOMBA_DE_PREGO_PROJECTILE.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.PREGO_PROJECTILE.get(), InvisiblePregoRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.TRADER_BLOCK_ENTITY.get(), TraderBlockRenderer::new);
     }
 
 

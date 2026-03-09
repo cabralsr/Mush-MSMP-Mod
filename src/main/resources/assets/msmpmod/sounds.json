@@ -10,5 +10,11 @@
     "sounds": [
       "msmpmod:rastejador/ambient1"
     ]
+  },
+  "dogzombie_ambient": {
+    "category": "hostile",
+    "sounds": [
+      "msmpmod:dogzombie/ambient1"
+    ]
   }
 }

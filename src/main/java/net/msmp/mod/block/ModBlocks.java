@@ -27,30 +27,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> MUSH_GRASSBLUE_BLOCK = registerBlock("mush_grassblue_block",
             () -> new MushBlockNausea(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
 
-    public static final RegistryObject<Block> EKKO_PLUSHIE = registerBlockWithoutItem("ekko_plushie",
-            () -> new PlushieBlock(
-                    BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion().strength(0.5f),
-                    () -> ModBlockEntities.PLUSHIE_BE.get()
-            ));
-
-    public static final RegistryObject<Block> ASTRO_PLUSHIE = registerBlockWithoutItem("astro_plushie",
-            () -> new PlushieBlock(
-                    BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion().strength(0.5f),
-                    () -> ModBlockEntities.PLUSHIE_BE.get()
-            ));
-
-    public static final RegistryObject<Block> ARTHEMIS_PLUSHIE = registerBlockWithoutItem("arthemis_plushie",
-            () -> new PlushieBlock(
-                    BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion().strength(0.5f),
-                    () -> ModBlockEntities.PLUSHIE_BE.get()
-            ));
-
-    public static final RegistryObject<Block> SUZZY_PLUSHIE = registerBlockWithoutItem("suzzy_plushie",
-            () -> new PlushieBlock(
-                    BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noOcclusion().strength(0.5f),
-                    () -> ModBlockEntities.PLUSHIE_BE.get()
-            ));
-
     public static final RegistryObject<Block> MUSH_GRASSPURPLE_BLOCK = registerBlock("mush_grasspurple_block",
             () -> new MushBlockDarkness(BlockBehaviour.Properties.copy(Blocks.BEDROCK).sound(SoundType.GRASS)));
 
@@ -62,6 +38,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MUSH_SLEEPING_GRASS_BLOCK = registerBlock("mush_sleeping_grass_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.GRASS).strength(-1.0F)));
+
+    public static final RegistryObject<Block> TRADER_BLOCK = registerBlock("trader_block",
+            () -> new TraderBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER).strength(-1.0F).noOcclusion()));
 
     //PLACAS
     public static final RegistryObject<Block> MUSH_SIGN_MNPC01 = BLOCKS.register("mush_sign_mnpc01",

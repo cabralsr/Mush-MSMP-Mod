@@ -13,6 +13,7 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> CLICKER_AMBIENT = registerSoundEvent("clicker_ambient");
     public static final RegistryObject<SoundEvent> RASTEJADOR_AMBIENT = registerSoundEvent("rastejador_ambient");
+    public static final RegistryObject<SoundEvent> DOGZOMBIE_AMBIENT = registerSoundEvent("dogzombie_ambient");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(MsmpMod.MOD_ID, name)));

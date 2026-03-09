@@ -1,0 +1,199 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:sucatas",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:tabuas",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:pregos",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:vidro_estilhacado",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:trapos",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:fita",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:fio_de_cobre",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:pilhas",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:arame_farpado",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:lamina",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:tesoura_quebrada",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": { "min": 1, "max": 2 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:remedios",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:garrafa_vidro",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:agulha_vazia",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:ampola_vazia",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:bateria",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:ampola_adrenaline",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:agulha_ampola_adrenaline",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "msmpmod:kit_primeiros_socorros",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}

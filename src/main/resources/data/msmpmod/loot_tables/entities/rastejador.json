@@ -2,45 +2,77 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "name": "comuns",
       "rolls": 1,
       "entries": [
+        { "type": "minecraft:item", "name": "msmpmod:trapos", "weight": 40 },
+        { "type": "minecraft:item", "name": "msmpmod:sucatas", "weight": 30 },
+        { "type": "minecraft:item", "name": "msmpmod:vidro_estilhacado", "weight": 20 },
+        { "type": "minecraft:item", "name": "msmpmod:tabuas", "weight": 10 }
+      ],
+      "functions": [
         {
-          "type": "minecraft:item",
-          "name": "msmpmod:trapos",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 3.0,
-                "type": "minecraft:uniform"
-              }
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
-            }
-          ]
+          "function": "minecraft:set_count",
+          "count": { "min": 1.0, "max": 2.0, "type": "minecraft:uniform" }
+        },
+        {
+          "function": "minecraft:looting_enchant",
+          "count": { "min": 0.0, "max": 1.0 }
         }
       ]
     },
     {
+      "name": "incomuns",
       "rolls": 1,
-      "entries": [
+      "conditions": [
         {
-          "type": "minecraft:item",
-          "name": "msmpmod:sucatas",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance_with_looting",
-              "chance": 0.35,
-              "looting_multiplier": 0.15
-            }
-          ]
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.50,
+          "looting_multiplier": 0.10
         }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "msmpmod:pregos", "weight": 20 },
+        { "type": "minecraft:item", "name": "msmpmod:fita", "weight": 20 },
+        { "type": "minecraft:item", "name": "msmpmod:fio_de_cobre", "weight": 15 },
+        { "type": "minecraft:item", "name": "msmpmod:pilhas", "weight": 15 },
+        { "type": "minecraft:item", "name": "msmpmod:garrafa_vidro", "weight": 10 }
+      ]
+    },
+    {
+      "name": "raros",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.15,
+          "looting_multiplier": 0.05
+        }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "msmpmod:remedios", "weight": 10 },
+        { "type": "minecraft:item", "name": "msmpmod:lamina", "weight": 10 },
+        { "type": "minecraft:item", "name": "msmpmod:tesoura_quebrada", "weight": 10 },
+        { "type": "minecraft:item", "name": "msmpmod:arame_farpado", "weight": 10 },
+        { "type": "minecraft:item", "name": "msmpmod:ampola_vazia", "weight": 5 },
+        { "type": "minecraft:item", "name": "msmpmod:agulha_vazia", "weight": 5 }
+      ]
+    },
+    {
+      "name": "epicos",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.03,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "msmpmod:kit_primeiros_socorros", "weight": 5 },
+        { "type": "minecraft:item", "name": "msmpmod:ampola_adrenaline", "weight": 5 },
+        { "type": "minecraft:item", "name": "msmpmod:agulha_ampola_adrenaline", "weight": 2 },
+        { "type": "minecraft:item", "name": "msmpmod:bateria", "weight": 2 }
       ]
     }
   ]

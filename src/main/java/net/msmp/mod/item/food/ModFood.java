@@ -30,6 +30,12 @@ public class ModFood {
             .alwaysEat()
             .build();
 
+    public static final FoodProperties BEBIDACAIXA = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationMod(3)
+            .alwaysEat()
+            .build();
+
     public static final FoodProperties WHISKY = new FoodProperties.Builder()
             .nutrition(1)
             .saturationMod(1)

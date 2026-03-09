@@ -11,6 +11,8 @@
 
   "block.msmpmod.mush_muss_block": "Musgo Infectada",
 
+  "block.msmpmod.trader_block": "Máquina de Troca",
+
   "block.msmpmod.mush_sleeping_block": "Infecção Adormecida Musgo",
 
   "block.msmpmod.mush_sleeping_grass_block": "Infecção Adormecida Grama",
@@ -45,13 +47,15 @@
 
   "item.msmpmod.comida_conserva2": "Sardinha Conservada",
 
-  "item.msmpmod.comida_conserva3": "Carnde de Porco Conservado",
+  "item.msmpmod.comida_conserva3": "Carne de Porco Conservado",
 
   "item.msmpmod.refri1" : "Refrigerante Cola",
 
-  "item.msmpmod.refri2" : "Refrigerante Laranja",
+  "item.msmpmod.refri2" : "Laranxinha",
 
-  "item.msmpmod.refri3" : "Refrigerante Roxo",
+  "item.msmpmod.refri3" : "Guaraviton",
+
+  "item.msmpmod.guaravita" : "Guaravita",
 
   "item.msmpmod.cerveja1" : "Cerveja Preta",
 
@@ -75,6 +79,9 @@
 
   "entity.msmpmod.rastejador": "Rastejador",
 
+  "item.msmpmod.dogzombie_spawn_egg":"Carcaça-Cega Spawn Egg",
+
+  "entity.msmpmod.dog_zombie": "Carcaça-Cega",
 
   "_comment": "Armas",
 
@@ -82,13 +89,27 @@
 
   "item.msmpmod.adaga_sangue": "Adaga de Sangue",
 
+  "item.msmpmod.adaga_enferrujada": "Adaga Enferrujada",
+
+  "item.msmpmod.cutelo_keruv": "Cutelo Keruv",
+
+  "item.msmpmod.gancho_keruv": "Gancho Keruv",
+
   "item.msmpmod.knife_ghost": "Faca GhostFace",
 
   "item.msmpmod.sword_rephal": "Espada Rephal",
 
+  "item.msmpmod.sword_enferrujada": "Espada com Arrame",
+
   "item.msmpmod.foice_first": "Foice Enferrujada",
 
+  "item.msmpmod.foice_one": "Foice de Sucata",
+
+  "item.msmpmod.lanca_vidro": "Lança Improvisada de Vidro",
+
   "item.msmpmod.foice_canibal": "Foice do Canibal",
+
+  "item.msmpmod.great_sword_cedric": "Espada do Cedric",
 
   "item.msmpmod.molotov": "Coquetel Molotov",
 
@@ -144,6 +165,8 @@
 
   "item.msmpmod.fita" : "Fita Adesiva",
 
+  "item.msmpmod.medalhao_cedric" : "Medalhao de Cedric",
+
   "_comment": "Placas",
 
   "block.msmpmod.mush_sign_mnpc01": "§bPlaca MNPC01",
@@ -171,6 +194,12 @@
   "block.msmpmod.mush_sign_ghost": "§cPlaca GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "_comment": "Keys",
+
+  "key.msmpmod.color_menu": "Menu Bubble Chat",
+
+  "category.msmpmod.keys": "MSMP",
 
   "_comment": "Titulos Abas",
 

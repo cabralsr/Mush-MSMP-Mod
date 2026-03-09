@@ -13,6 +13,8 @@
 
   "block.msmpmod.mush_sleeping_block": "Dormant Infection Muss",
 
+  "block.msmpmod.trader_block": "Exchange Machine",
+
   "block.msmpmod.mush_sleeping_grass_block": "Dormant Infection Grass",
 
   "_comment": "Armor",
@@ -53,6 +55,8 @@
 
   "item.msmpmod.refri3" : "Purple Soda",
 
+  "item.msmpmod.guaravita" : "Guaravita",
+
   "item.msmpmod.cerveja1" : "Black Beer",
 
   "item.msmpmod.cerveja2" : "Beer",
@@ -79,19 +83,37 @@
 
   "entity.msmpmod.rastejador": "Crawler",
 
+  "item.msmpmod.dogzombie_spawn_egg":"Blind Carcass Spawn Egg",
+
+  "entity.msmpmod.dog_zombie": "Blind Carcass",
+
   "_comment": "Sword's",
 
   "item.msmpmod.axe_guittar": "Laminated Guitar",
 
   "item.msmpmod.adaga_sangue": "Blood Dagger",
 
+  "item.msmpmod.adaga_enferrujada": "Rusty Dagger",
+
+  "item.msmpmod.cutelo_keruv": "Keruv Cleaver",
+
+  "item.msmpmod.gancho_keruv": "Keruv Hook",
+
   "item.msmpmod.knife_ghost": "GhostFace Knife",
 
   "item.msmpmod.sword_rephal": "Sword Rephal",
 
+  "item.msmpmod.sword_enferrujada": "Rusty Sword",
+
   "item.msmpmod.foice_first": "Rusty Scythe",
 
+  "item.msmpmod.foice_one": "Scrap Scythe",
+
+  "item.msmpmod.lanca_vidro": "Improvised Glass Spear",
+
   "item.msmpmod.foice_canibal": "Cannibal's Scythe",
+
+  "item.msmpmod.great_sword_cedric": "Sword Cedric",
 
   "item.msmpmod.molotov": "Molotov Cocktail",
 
@@ -143,6 +165,8 @@
 
   "item.msmpmod.fita" : "Adhesive Tape",
 
+  "item.msmpmod.medalhao_cedric" : "Cedric's Medal",
+
   "_comment": "Sign's",
 
   "block.msmpmod.mush_sign_mnpc01": "§bSign MNPC01",
@@ -170,6 +194,12 @@
   "block.msmpmod.mush_sign_ghost": "§cSign GHOSTFACE",
 
   "tooltip.msmpmod.signs": "§7§oDesign by @ponyozita",
+
+  "_comment": "Keys",
+
+  "key.msmpmod.color_menu": "Menu Bubble Chat",
+
+  "category.msmpmod.keys": "MSMP",
 
   "_comment": "Tab Title",
 

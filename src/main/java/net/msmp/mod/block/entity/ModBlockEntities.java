@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.msmp.mod.block.entity.custom.PlushieBlockEntity;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.block.ModBlocks;
 
@@ -33,17 +32,10 @@ public class ModBlockEntities {
                     ).build(null)
             );
 
-    public static final RegistryObject<BlockEntityType<PlushieBlockEntity>> PLUSHIE_BE =
-            BLOCK_ENTITIES.register("plushie_be", () ->
-                    BlockEntityType.Builder.of(
-                            PlushieBlockEntity::new,
-                            ModBlocks.ASTRO_PLUSHIE.get(),
-                            ModBlocks.EKKO_PLUSHIE.get(),
-                            ModBlocks.ARTHEMIS_PLUSHIE.get(),
-                            ModBlocks.SUZZY_PLUSHIE.get()
-                    ).build(null));
-
-    
+    public static final RegistryObject<BlockEntityType<TraderBlockEntity>> TRADER_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("trader_block_entity", () ->
+                    BlockEntityType.Builder.of(TraderBlockEntity::new,
+                            ModBlocks.TRADER_BLOCK.get()).build(null));
 
     public static void register(IEventBus eventBus) {BLOCK_ENTITIES.register(eventBus);}
 }

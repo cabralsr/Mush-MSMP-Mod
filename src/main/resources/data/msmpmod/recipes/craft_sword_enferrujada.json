@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ALA",
+    "ALA",
+    " I "
+  ],
+  "key": {
+    "L": {
+      "item": "msmpmod:lamina"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "msmpmod:arame_farpado"
+    }
+  },
+  "result": {
+    "item": "msmpmod:sword_enferrujada",
+    "count": 1
+  }
+}

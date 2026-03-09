@@ -126,14 +126,19 @@ public class TestEntity extends Monster implements GeoEntity {
     }
 
     @Override
+    protected float getSoundVolume() {
+        return 1F;
+    }
+
+    @Override
     public void die(DamageSource cause) {
         super.die(cause);
 
         if (!this.level().isClientSide()) {
 
-            net.minecraft.resources.ResourceLocation soundId = net.msmp.mod.ModSounds.CLICKER_AMBIENT.getId();
+            net.minecraft.resources.ResourceLocation soundId = ModSounds.CLICKER_AMBIENT.getId();
 
-            for (net.minecraft.world.entity.player.Player player : this.level().players()) {
+            for (Player player : this.level().players()) {
 
                 if (player instanceof ServerPlayer serverPlayer && player.distanceToSqr(this) < 1024.0D) {
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  I",
+    " IL",
+    "SL "
+  ],
+  "key": {
+    "L": {
+      "item": "msmpmod:lamina"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "msmpmod:adaga_enferrujada",
+    "count": 1
+  }
+}

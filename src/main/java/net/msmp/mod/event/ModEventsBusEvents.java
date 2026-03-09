@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.msmp.mod.MsmpMod;
 import net.msmp.mod.entity.ModEntityTypes;
+import net.msmp.mod.entity.custom.DogZombieEntity;
 import net.msmp.mod.entity.custom.RastejadorEntity;
 import net.msmp.mod.entity.custom.TestEntity;
 
@@ -19,6 +20,7 @@ public class ModEventsBusEvents {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.SEU_MOB.get(), TestEntity.createAttributes().build());
         event.put(ModEntityTypes.RASTEJADOR_MOB.get(), RastejadorEntity.createAttributes().build());
+        event.put(ModEntityTypes.DogZombie_MOB.get(), DogZombieEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -34,6 +36,14 @@ public class ModEventsBusEvents {
 
         event.register(
                 ModEntityTypes.RASTEJADOR_MOB.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Monster::checkMonsterSpawnRules,
+                SpawnPlacementRegisterEvent.Operation.REPLACE
+        );
+
+        event.register(
+                ModEntityTypes.DogZombie_MOB.get(),
                 SpawnPlacements.Type.ON_GROUND,
                 Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Monster::checkMonsterSpawnRules,

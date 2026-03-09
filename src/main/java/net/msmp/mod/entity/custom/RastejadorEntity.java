@@ -63,7 +63,7 @@ public class RastejadorEntity extends Monster implements GeoEntity {
     public static AttributeSupplier.Builder createAttributes() {
         return PathfinderMob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 50.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.3D)
+                .add(Attributes.MOVEMENT_SPEED, 0.1D)
                 .add(Attributes.ATTACK_DAMAGE, 15.0D)
                 .add(Attributes.ARMOR, 7D)
                 .add(Attributes.ATTACK_SPEED, 1.5D)
@@ -123,6 +123,11 @@ public class RastejadorEntity extends Monster implements GeoEntity {
     @Override
     protected SoundEvent getAmbientSound() {
         return ModSounds.RASTEJADOR_AMBIENT.get();
+    }
+
+    @Override
+    protected float getSoundVolume() {
+        return 1F;
     }
 
     @Override

@@ -35,6 +35,8 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.MUSH_SLEEPING_GRASS_BLOCK.get());
 
+                        output.accept(ModBlocks.TRADER_BLOCK.get());
+
                         // PLACAS
 
                         output.accept(ModItems.MUSH_SIGN_MNPC01.get());
@@ -72,6 +74,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CLICKER_SPAWN_EGG.get());
 
                         output.accept(ModItems.RASTEJADOR_SPAWN_EGG.get());
+
+                        output.accept(ModItems.DOGZOMBIE_SPAWN_EGG.get());
                     })
                     .title(Component.translatable("creativetab.msmp_tab"))
                     .build());
@@ -84,11 +88,25 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.SWORD_REPHAL.get());
 
+                        output.accept(ModItems.SWORD_ENFERRUJADA.get());
+
+                        output.accept(ModItems.CUTELO_KERUV.get());
+
+                        output.accept(ModItems.GANCHO_KERUV.get());
+
                         output.accept(ModItems.FOICE_FIRST.get());
+
+                        output.accept(ModItems.FOICE_ONE.get());
 
                         output.accept(ModItems.ADAGA_SANGUE.get());
 
+                        output.accept(ModItems.ADAGA_ENFERRUJADA.get());
+
                         output.accept(ModItems.FOICE_CANIBAL.get());
+
+                        output.accept(ModItems.GREAT_SWORD_CEDRIC.get());
+
+                        output.accept(ModItems.LANCA_VIDRO.get());
 
                         output.accept(ModItems.AXE_GUITTAR.get());
 
@@ -119,6 +137,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.REFRI2.get());
 
                         output.accept(ModItems.REFRI3.get());
+
+                        output.accept(ModItems.GUARAVITA.get());
 
                         output.accept(ModItems.WHISKY.get());
 
@@ -178,7 +198,7 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.Kit_Primeiros_Socorros.get());
 
-                        output.accept(ModItems.LORE_BOOK1.get());
+                        output.accept(ModItems.MEDALHAO_CEDRIC.get());
 
                     }).title(Component.translatable("creativetab.msmp_tab_resource")).build());
     private static final Logger log = LoggerFactory.getLogger(ModCreativeModTabs.class);

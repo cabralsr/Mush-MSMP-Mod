@@ -16,11 +16,11 @@ import org.lwjgl.glfw.GLFW;
 public class KeyBindingEvents {
 
     public static final KeyMapping COLOR_MENU_KEY = new KeyMapping(
-            "key.msmpmod.color_menu", // Nome interno
+            "key.msmpmod.color_menu",
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_V, // Tecla V padrão
-            "category.msmpmod.keys" // Categoria no menu de controles
+            GLFW.GLFW_KEY_V,
+            "category.msmpmod.keys"
     );
 
     @Mod.EventBusSubscriber(modid = MsmpMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"attack": {
+			"loop": true
+		},
+		"walk": {
+			"loop": true
+		},
+		"idle": {
+			"loop": true
+		}
+	}
+}

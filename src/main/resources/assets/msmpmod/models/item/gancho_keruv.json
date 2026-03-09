@@ -1,0 +1,18 @@
+{
+  "parent" : "minecraft:item/handheld",
+  "loader" : "forge:separate_transforms",
+  "base": {
+    "parent" : "msmpmod:item/gancho_keruv_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "msmpmod:item/gancho_keruv_3d"
+    },
+    "ground": {
+      "parent": "msmpmod:item/gancho_keruv_3d"
+    },
+    "fixed": {
+      "parent": "msmpmod:item/gancho_keruv_3d"
+    }
+  }
+}

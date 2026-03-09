@@ -1,0 +1,18 @@
+{
+  "parent" : "minecraft:item/handheld",
+  "loader" : "forge:separate_transforms",
+  "base": {
+    "parent" : "msmpmod:item/cutelo_keruv_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "msmpmod:item/cutelo_keruv_3d"
+    },
+    "ground": {
+      "parent": "msmpmod:item/cutelo_keruv_3d"
+    },
+    "fixed": {
+      "parent": "msmpmod:item/cutelo_keruv_3d"
+    }
+  }
+}

@@ -25,6 +25,9 @@ public class ModItems {
     public static final DeferredRegister<Item>ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MsmpMod.MOD_ID);
 
+    public static final RegistryObject<Item> MEDALHAO_CEDRIC = ITEMS.register("medalhao_cedric",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> GAS_MASK = ITEMS.register("gas_mask",
             () -> new GasMaskItem(
                     ArmorMaterials.LEATHER,
@@ -133,6 +136,11 @@ public class ModItems {
                     .stacksTo(16)
                     .food(REFRIGERANTE)));
 
+    public static final RegistryObject<Item> GUARAVITA = ITEMS.register("guaravita",
+            () -> new BebidaCaixaItem(new Item.Properties()
+                    .stacksTo(16)
+                    .food(BEBIDACAIXA)));
+
     public static final RegistryObject<Item> CANTIL_VAZIO = ITEMS.register("cantil_vazio",
             () -> new CantilVazioItem(new Item.Properties().stacksTo(1)));
 
@@ -155,27 +163,55 @@ public class ModItems {
 
     //ESPADAS
     public static final RegistryObject<Item> KNIFE_GHOST = ITEMS.register("knife_ghost",
-            () -> new CustomSword(Tiers.NETHERITE, 30, 2,
+            () -> new CustomSword(Tiers.NETHERITE, 18, -0.5,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SWORD_REPHAL = ITEMS.register("sword_rephal",
-            () -> new CustomSword(Tiers.NETHERITE, 40, -2,
+            () -> new CustomSword(Tiers.NETHERITE, 25, -2,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> SWORD_ENFERRUJADA = ITEMS.register("sword_enferrujada",
+            () -> new CustomSword(Tiers.NETHERITE, 16, -3,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> FOICE_FIRST = ITEMS.register("foice_first",
-            () -> new CustomSword(Tiers.NETHERITE, 18, -1.5,
+            () -> new CustomSword(Tiers.NETHERITE, 8, -2.5,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> FOICE_ONE = ITEMS.register("foice_one",
+            () -> new CustomSword(Tiers.NETHERITE, 8, -2.5,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> LANCA_VIDRO = ITEMS.register("lanca_vidro",
+            () -> new CustomSword(Tiers.NETHERITE, 5, -2,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> FOICE_CANIBAL = ITEMS.register("foice_canibal",
-            () -> new CustomSword(Tiers.NETHERITE, 18, -1.5,
+            () -> new CustomSword(Tiers.NETHERITE, 18, -2.5,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> CUTELO_KERUV = ITEMS.register("cutelo_keruv",
+            () -> new CustomSword(Tiers.NETHERITE, 20, -2.5,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> GANCHO_KERUV = ITEMS.register("gancho_keruv",
+            () -> new CustomSword(Tiers.NETHERITE, 18, -2,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> ADAGA_SANGUE = ITEMS.register("adaga_sangue",
-            () -> new CustomSword(Tiers.NETHERITE, 21, -0.5,
+            () -> new CustomSword(Tiers.NETHERITE, 18, -1,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> ADAGA_ENFERRUJADA = ITEMS.register("adaga_enferrujada",
+            () -> new CustomSword(Tiers.NETHERITE, 2, -1.5,
                     new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> AXE_GUITTAR = ITEMS.register("axe_guittar",
-            () -> new CustomSword(Tiers.NETHERITE, 26, -3,
+            () -> new CustomSword(Tiers.NETHERITE, 14, -3,
+                    new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> GREAT_SWORD_CEDRIC = ITEMS.register("great_sword_cedric",
+            () -> new CustomSword(Tiers.NETHERITE, 25, -3,
                     new Item.Properties().stacksTo(1)));
 
     //PLACAS
@@ -346,6 +382,13 @@ public class ModItems {
                     ModEntityTypes.RASTEJADOR_MOB,
                     0x800080,
                     0xA9A9A9,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> DOGZOMBIE_SPAWN_EGG = ITEMS.register("dogzombie_spawn_egg",
+            () -> new ForgeSpawnEggItem(
+                    ModEntityTypes.DogZombie_MOB,
+                    0xFF0000,
+                    0x8B0000,
                     new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

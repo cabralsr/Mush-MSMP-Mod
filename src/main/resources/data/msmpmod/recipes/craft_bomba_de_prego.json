@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "PIP",
+    "IPI"
+  ],
+  "key": {
+    "P": {
+      "item": "msmpmod:pregos"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "msmpmod:bomba_de_prego",
+    "count": 3
+  }
+}
